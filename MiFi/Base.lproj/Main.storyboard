@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="BYZ-38-t0r" customClass="SignInViewController" customModule="MiFi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="UYL-gR-96v">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yp-oe-Up7">
+                                        <rect key="frame" x="20" y="145" width="335" height="502"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt3-yM-T8y">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="402"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ija-ab-nVc">
+                                                        <rect key="frame" x="0.0" y="25" width="335" height="300"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XGG-4k-I60" customClass="CustomTextField" customModule="MiFi" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="20" width="335" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="MrG-ja-bkI"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRt-as-2LZ" customClass="CustomTextField" customModule="MiFi" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="95" width="335" height="50"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="9z1-b7-YsO"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="XGG-4k-I60" secondAttribute="trailing" id="4oy-Dw-Ddn"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="601" id="4vr-JX-o0x"/>
+                                                            <constraint firstAttribute="height" constant="600" id="DhR-XA-UT7"/>
+                                                            <constraint firstItem="sRt-as-2LZ" firstAttribute="top" secondItem="XGG-4k-I60" secondAttribute="bottom" constant="25" id="KIe-g7-09x"/>
+                                                            <constraint firstItem="sRt-as-2LZ" firstAttribute="leading" secondItem="XGG-4k-I60" secondAttribute="leading" id="R4B-rC-Kvs"/>
+                                                            <constraint firstItem="XGG-4k-I60" firstAttribute="top" secondItem="Ija-ab-nVc" secondAttribute="top" constant="20" id="ZSz-SS-uAn"/>
+                                                            <constraint firstAttribute="width" constant="600" id="bph-Om-eCT"/>
+                                                            <constraint firstItem="sRt-as-2LZ" firstAttribute="width" secondItem="XGG-4k-I60" secondAttribute="width" id="dse-2r-IfW"/>
+                                                            <constraint firstAttribute="height" constant="300" id="iJd-pQ-U9H"/>
+                                                            <constraint firstAttribute="height" constant="240" id="jLI-De-4XP"/>
+                                                            <constraint firstItem="XGG-4k-I60" firstAttribute="leading" secondItem="Ija-ab-nVc" secondAttribute="leading" id="ymc-YO-p4r"/>
+                                                        </constraints>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="4vr-JX-o0x"/>
+                                                                <exclude reference="DhR-XA-UT7"/>
+                                                                <exclude reference="bph-Om-eCT"/>
+                                                                <exclude reference="jLI-De-4XP"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Ija-ab-nVc" secondAttribute="trailing" id="Kh2-Th-lfZ"/>
+                                                    <constraint firstItem="Ija-ab-nVc" firstAttribute="leading" secondItem="Xt3-yM-T8y" secondAttribute="leading" id="QvY-K6-QLE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ija-ab-nVc" secondAttribute="bottom" id="UmD-1Q-w9Y"/>
+                                                    <constraint firstItem="Ija-ab-nVc" firstAttribute="top" secondItem="Xt3-yM-T8y" secondAttribute="top" constant="25" id="XBI-b3-SFk"/>
+                                                    <constraint firstItem="Ija-ab-nVc" firstAttribute="width" secondItem="Xt3-yM-T8y" secondAttribute="width" id="Znd-Z9-uZw"/>
+                                                    <constraint firstItem="Ija-ab-nVc" firstAttribute="height" secondItem="Xt3-yM-T8y" secondAttribute="height" id="zJp-dv-gql"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="zJp-dv-gql"/>
+                                                    </mask>
+                                                </variation>
+                                            </scrollView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7c-Zm-jYn" customClass="CustomButton" customModule="MiFi" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="422" width="265" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="KLG-Y0-Nee"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Sign In">
+                                                    <color key="titleColor" red="0.72407852559999997" green="0.72407852559999997" blue="0.72407852559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EcC-cu-CEu"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOS-AI-D8Q" customClass="CustomOptionWheel" customModule="MiFi" customModuleProvider="target">
+                                                <rect key="frame" x="285" y="422" width="50" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="ADZ-3i-b2W"/>
+                                                    <constraint firstAttribute="height" constant="50" id="XIG-KR-KCl"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="6ro-HR-0Kq"/>
+                                            <constraint firstItem="Xt3-yM-T8y" firstAttribute="leading" secondItem="7yp-oe-Up7" secondAttribute="leading" id="L3c-t9-2zZ"/>
+                                            <constraint firstItem="a7c-Zm-jYn" firstAttribute="leading" secondItem="sRt-as-2LZ" secondAttribute="leading" id="T3J-dP-tti"/>
+                                            <constraint firstItem="BOS-AI-D8Q" firstAttribute="leading" secondItem="a7c-Zm-jYn" secondAttribute="trailing" constant="20" id="a98-fS-SGx"/>
+                                            <constraint firstAttribute="trailing" secondItem="BOS-AI-D8Q" secondAttribute="trailing" id="k0T-cJ-Kgm"/>
+                                            <constraint firstItem="a7c-Zm-jYn" firstAttribute="top" secondItem="Xt3-yM-T8y" secondAttribute="bottom" constant="20" id="nMN-nF-w0X"/>
+                                            <constraint firstItem="Xt3-yM-T8y" firstAttribute="top" secondItem="7yp-oe-Up7" secondAttribute="top" id="uyo-wW-ZvZ"/>
+                                            <constraint firstItem="BOS-AI-D8Q" firstAttribute="top" secondItem="Xt3-yM-T8y" secondAttribute="bottom" constant="20" id="w5p-LZ-9ti"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xt3-yM-T8y" secondAttribute="trailing" id="xfm-gW-cce"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6ro-HR-0Kq"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1" image="Mifi Logo" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-0r-QGz">
+                                        <rect key="frame" x="88" y="45" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qtS-0r-QGz" secondAttribute="height" multiplier="2:1" id="H6p-jd-Vnk"/>
+                                            <constraint firstAttribute="width" constant="200" id="kop-KZ-UC0"/>
+                                            <constraint firstAttribute="width" secondItem="qtS-0r-QGz" secondAttribute="height" multiplier="2:1" id="l4j-A4-GBE"/>
+                                            <constraint firstAttribute="height" constant="115" id="r3G-Nf-xUn"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="H6p-jd-Vnk"/>
+                                                <exclude reference="r3G-Nf-xUn"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7yp-oe-Up7" secondAttribute="bottom" constant="20" symbolic="YES" id="0oz-oo-cYb"/>
+                                    <constraint firstItem="7yp-oe-Up7" firstAttribute="top" secondItem="qtS-0r-QGz" secondAttribute="bottom" id="5em-lw-XfS"/>
+                                    <constraint firstItem="qtS-0r-QGz" firstAttribute="centerX" secondItem="UYL-gR-96v" secondAttribute="centerX" id="A3r-Ny-vaz"/>
+                                    <constraint firstAttribute="bottom" secondItem="BOS-AI-D8Q" secondAttribute="bottom" constant="50" id="FFc-Rz-4ua"/>
+                                    <constraint firstItem="7yp-oe-Up7" firstAttribute="leading" secondItem="UYL-gR-96v" secondAttribute="leading" constant="20" symbolic="YES" id="Y54-mZ-uIV"/>
+                                    <constraint firstAttribute="trailing" secondItem="7yp-oe-Up7" secondAttribute="trailing" constant="20" symbolic="YES" id="aU8-f3-lfn"/>
+                                    <constraint firstItem="7yp-oe-Up7" firstAttribute="centerY" secondItem="UYL-gR-96v" secondAttribute="centerY" id="tqX-5c-Ddn"/>
+                                    <constraint firstItem="qtS-0r-QGz" firstAttribute="top" secondItem="UYL-gR-96v" secondAttribute="top" constant="45" id="uFa-2J-N9N"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tqX-5c-Ddn"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UYL-gR-96v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="5bU-FI-fYb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UYL-gR-96v" secondAttribute="trailing" constant="-16" id="I3g-Rq-zeC"/>
+                            <constraint firstItem="UYL-gR-96v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="l07-Ld-sLr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UYL-gR-96v" secondAttribute="bottom" id="mr5-ep-Y9F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="XGG-4k-I60" id="dWh-16-HcF"/>
+                        <outlet property="optionsWheel" destination="BOS-AI-D8Q" id="SOA-8p-qnu"/>
+                        <outlet property="password" destination="sRt-as-2LZ" id="hlu-cb-cb5"/>
+                        <outlet property="signIn" destination="a7c-Zm-jYn" id="u8V-Kz-e6N"/>
+                        <outlet property="signInView" destination="Ija-ab-nVc" id="Rn3-bt-kPt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="taI-SY-HL3">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="SkM-Tn-Oqf" customClass="SignUpViewController" customModule="MiFi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gjP-49-frD"/>
+                        <viewControllerLayoutGuide type="bottom" id="EGG-tY-fsW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MPt-fC-Yia">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="0A7-Iv-J1o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lyd-rk-Cso">
+                                        <rect key="frame" x="20" y="145" width="335" height="585"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2b-3c-DaM">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="485"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPN-mJ-ds5">
+                                                        <rect key="frame" x="0.0" y="25" width="335" height="550"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5Z4-tx-CQi" customClass="CustomTextField" customModule="MiFi" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="20" width="335" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="tfy-qZ-mjp"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-oa-p78" customClass="CustomTextField" customModule="MiFi" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="95" width="335" height="50"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="tKX-J2-baH"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ry4-j5-dVO" customClass="CustomTextField" customModule="MiFi" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="170" width="335" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="apg-kL-uX3"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XdA-pI-V8D" customClass="CustomTextField" customModule="MiFi" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="245" width="335" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="WwE-EE-AmY"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6SN-X8-OUU" customClass="CustomTextField" customModule="MiFi" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="320" width="335" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="ZRH-Qe-cPS"/>
+                                                                </constraints>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="600" id="0Lb-l7-vLo"/>
+                                                            <constraint firstAttribute="height" constant="550" id="30J-6l-BNk"/>
+                                                            <constraint firstItem="5Z4-tx-CQi" firstAttribute="leading" secondItem="aPN-mJ-ds5" secondAttribute="leading" id="AdA-Uh-dpm"/>
+                                                            <constraint firstItem="XTM-oa-p78" firstAttribute="leading" secondItem="5Z4-tx-CQi" secondAttribute="leading" id="FkP-Z5-gqs"/>
+                                                            <constraint firstItem="6SN-X8-OUU" firstAttribute="top" secondItem="XdA-pI-V8D" secondAttribute="bottom" constant="25" id="KBj-mi-NAd"/>
+                                                            <constraint firstItem="5Z4-tx-CQi" firstAttribute="top" secondItem="aPN-mJ-ds5" secondAttribute="top" constant="20" id="MB9-xT-tf8"/>
+                                                            <constraint firstItem="6SN-X8-OUU" firstAttribute="leading" secondItem="XdA-pI-V8D" secondAttribute="leading" id="MId-b4-Fol"/>
+                                                            <constraint firstItem="XdA-pI-V8D" firstAttribute="leading" secondItem="ry4-j5-dVO" secondAttribute="leading" id="c5e-Se-6EG"/>
+                                                            <constraint firstAttribute="height" constant="240" id="cVo-o6-ECh"/>
+                                                            <constraint firstItem="XTM-oa-p78" firstAttribute="width" secondItem="5Z4-tx-CQi" secondAttribute="width" id="ebq-ew-nFT"/>
+                                                            <constraint firstItem="XTM-oa-p78" firstAttribute="top" secondItem="5Z4-tx-CQi" secondAttribute="bottom" constant="25" id="iON-61-Rlj"/>
+                                                            <constraint firstAttribute="width" constant="600" id="iyB-6y-de4"/>
+                                                            <constraint firstItem="ry4-j5-dVO" firstAttribute="width" secondItem="XTM-oa-p78" secondAttribute="width" id="oHJ-jy-2Uc"/>
+                                                            <constraint firstItem="6SN-X8-OUU" firstAttribute="width" secondItem="XdA-pI-V8D" secondAttribute="width" id="pfG-nQ-AKS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="5Z4-tx-CQi" secondAttribute="trailing" id="rSv-DA-vCM"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="601" id="sUM-Ux-awH"/>
+                                                            <constraint firstItem="ry4-j5-dVO" firstAttribute="leading" secondItem="XTM-oa-p78" secondAttribute="leading" id="tcO-9d-OsF"/>
+                                                            <constraint firstItem="ry4-j5-dVO" firstAttribute="top" secondItem="XTM-oa-p78" secondAttribute="bottom" constant="25" id="un5-CY-39Q"/>
+                                                            <constraint firstItem="XdA-pI-V8D" firstAttribute="width" secondItem="ry4-j5-dVO" secondAttribute="width" id="vu0-Ze-RBg"/>
+                                                            <constraint firstItem="XdA-pI-V8D" firstAttribute="top" secondItem="ry4-j5-dVO" secondAttribute="bottom" constant="25" id="yqF-KE-zgu"/>
+                                                        </constraints>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="0Lb-l7-vLo"/>
+                                                                <exclude reference="cVo-o6-ECh"/>
+                                                                <exclude reference="iyB-6y-de4"/>
+                                                                <exclude reference="sUM-Ux-awH"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="aPN-mJ-ds5" secondAttribute="bottom" id="1az-Bj-c7g"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aPN-mJ-ds5" secondAttribute="trailing" id="Oht-UC-Tj8"/>
+                                                    <constraint firstItem="aPN-mJ-ds5" firstAttribute="top" secondItem="u2b-3c-DaM" secondAttribute="top" constant="25" id="QDV-9k-aVh"/>
+                                                    <constraint firstItem="aPN-mJ-ds5" firstAttribute="width" secondItem="u2b-3c-DaM" secondAttribute="width" id="RGe-z6-nOw"/>
+                                                    <constraint firstItem="aPN-mJ-ds5" firstAttribute="leading" secondItem="u2b-3c-DaM" secondAttribute="leading" id="jmu-mD-1Iv"/>
+                                                    <constraint firstItem="aPN-mJ-ds5" firstAttribute="height" secondItem="u2b-3c-DaM" secondAttribute="height" id="oDn-e0-c0u"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="oDn-e0-c0u"/>
+                                                    </mask>
+                                                </variation>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="4Pi-ix-gUb"/>
+                                            <constraint firstItem="u2b-3c-DaM" firstAttribute="top" secondItem="lyd-rk-Cso" secondAttribute="top" id="HPZ-kF-3rc"/>
+                                            <constraint firstAttribute="trailing" secondItem="u2b-3c-DaM" secondAttribute="trailing" id="jOm-T5-14E"/>
+                                            <constraint firstItem="u2b-3c-DaM" firstAttribute="leading" secondItem="lyd-rk-Cso" secondAttribute="leading" id="udR-tJ-KzV"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4Pi-ix-gUb"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1" image="Mifi Logo" translatesAutoresizingMaskIntoConstraints="NO" id="MhW-JT-F2b">
+                                        <rect key="frame" x="88" y="45" width="200" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="115" id="5Du-Xg-d8a"/>
+                                            <constraint firstAttribute="width" constant="200" id="KOs-vH-oBw"/>
+                                            <constraint firstAttribute="width" secondItem="MhW-JT-F2b" secondAttribute="height" multiplier="2:1" id="Z2S-p4-9TB"/>
+                                            <constraint firstAttribute="width" secondItem="MhW-JT-F2b" secondAttribute="height" multiplier="2:1" id="pVe-aW-1wj"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5Du-Xg-d8a"/>
+                                                <exclude reference="pVe-aW-1wj"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFB-sS-1wG" customClass="CustomOptionWheel" customModule="MiFi" customModuleProvider="target">
+                                        <rect key="frame" x="305" y="650" width="50" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="1kX-ei-SW1"/>
+                                            <constraint firstAttribute="height" constant="50" id="aQK-YH-VBQ"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP7-Ie-AEm" customClass="CustomButton" customModule="MiFi" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="650" width="265" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="R80-sn-v9L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.72407852559999997" green="0.72407852559999997" blue="0.72407852559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUp:" destination="SkM-Tn-Oqf" eventType="touchUpInside" id="Yka-O4-rTn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lyd-rk-Cso" firstAttribute="centerY" secondItem="0A7-Iv-J1o" secondAttribute="centerY" id="5ai-rw-PEd"/>
+                                    <constraint firstAttribute="trailing" secondItem="EFB-sS-1wG" secondAttribute="trailing" constant="20" symbolic="YES" id="74A-zM-zhg"/>
+                                    <constraint firstItem="MhW-JT-F2b" firstAttribute="centerX" secondItem="0A7-Iv-J1o" secondAttribute="centerX" id="8hz-4q-Q30"/>
+                                    <constraint firstItem="FP7-Ie-AEm" firstAttribute="top" secondItem="u2b-3c-DaM" secondAttribute="bottom" constant="20" id="AtI-MZ-P0q"/>
+                                    <constraint firstItem="EFB-sS-1wG" firstAttribute="leading" secondItem="FP7-Ie-AEm" secondAttribute="trailing" constant="20" id="E1Y-ZG-X34"/>
+                                    <constraint firstAttribute="bottom" secondItem="lyd-rk-Cso" secondAttribute="bottom" constant="20" symbolic="YES" id="H8r-tK-w7p"/>
+                                    <constraint firstAttribute="trailing" secondItem="lyd-rk-Cso" secondAttribute="trailing" constant="20" symbolic="YES" id="HoG-y6-T4P"/>
+                                    <constraint firstItem="FP7-Ie-AEm" firstAttribute="leading" secondItem="6SN-X8-OUU" secondAttribute="leading" id="Jri-hA-Nbi"/>
+                                    <constraint firstAttribute="bottom" secondItem="EFB-sS-1wG" secondAttribute="bottom" constant="50" id="Smg-PT-fmP"/>
+                                    <constraint firstItem="MhW-JT-F2b" firstAttribute="top" secondItem="0A7-Iv-J1o" secondAttribute="top" constant="45" id="ei6-k9-aEp"/>
+                                    <constraint firstItem="FP7-Ie-AEm" firstAttribute="centerY" secondItem="EFB-sS-1wG" secondAttribute="centerY" id="foM-rq-UuL"/>
+                                    <constraint firstItem="lyd-rk-Cso" firstAttribute="top" secondItem="MhW-JT-F2b" secondAttribute="bottom" id="tDW-v6-15R"/>
+                                    <constraint firstItem="lyd-rk-Cso" firstAttribute="leading" secondItem="0A7-Iv-J1o" secondAttribute="leading" constant="20" symbolic="YES" id="zyf-rh-CO6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5ai-rw-PEd"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0A7-Iv-J1o" firstAttribute="top" secondItem="gjP-49-frD" secondAttribute="bottom" constant="-20" id="94n-WW-eXt"/>
+                            <constraint firstItem="EGG-tY-fsW" firstAttribute="top" secondItem="0A7-Iv-J1o" secondAttribute="bottom" id="MgC-gt-rWM"/>
+                            <constraint firstItem="0A7-Iv-J1o" firstAttribute="leading" secondItem="MPt-fC-Yia" secondAttribute="leadingMargin" constant="-16" id="NaW-cx-dTV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0A7-Iv-J1o" secondAttribute="trailing" constant="-16" id="Y3B-Nl-WS2"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="750"/>
+                    <connections>
+                        <outlet property="email" destination="ry4-j5-dVO" id="1nB-KF-8aI"/>
+                        <outlet property="firstName" destination="5Z4-tx-CQi" id="Z2Y-Fd-Mej"/>
+                        <outlet property="lastName" destination="XTM-oa-p78" id="moB-ae-AI3"/>
+                        <outlet property="optionsWheel" destination="EFB-sS-1wG" id="bfO-Lf-Oqc"/>
+                        <outlet property="password" destination="XdA-pI-V8D" id="vUA-8V-8hm"/>
+                        <outlet property="signUp" destination="FP7-Ie-AEm" id="J4G-FJ-05c"/>
+                        <outlet property="verifyPassword" destination="6SN-X8-OUU" id="7bv-Xq-DDy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0r-o7-a8s" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="123.23838080959521"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="2GA-IE-dFH">
+            <objects>
+                <viewController id="0Qn-mn-6bg" customClass="HomeViewController" customModule="MiFi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kfb-bk-kzn"/>
+                        <viewControllerLayoutGuide type="bottom" id="92E-qe-GeQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7xh-6a-Hg0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1" image="Mifi Logo" translatesAutoresizingMaskIntoConstraints="NO" id="gGi-md-AhE">
+                                <rect key="frame" x="87" y="45" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gGi-md-AhE" secondAttribute="height" multiplier="2:1" id="Duf-6k-2ir"/>
+                                    <constraint firstAttribute="width" constant="200" id="GZX-SV-KxF"/>
+                                    <constraint firstAttribute="height" constant="115" id="Sqj-YL-5do"/>
+                                    <constraint firstAttribute="width" secondItem="gGi-md-AhE" secondAttribute="height" multiplier="2:1" id="pxw-Nx-kJn"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Sqj-YL-5do"/>
+                                        <exclude reference="pxw-Nx-kJn"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pak-bY-si6" customClass="CustomOptionWheel" customModule="MiFi" customModuleProvider="target">
+                                <rect key="frame" x="289" y="597" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="iCp-fu-OkC"/>
+                                    <constraint firstAttribute="height" constant="50" id="jTn-FC-Ei7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="92E-qe-GeQ" firstAttribute="top" secondItem="Pak-bY-si6" secondAttribute="bottom" constant="20" id="JsE-h7-iqQ"/>
+                            <constraint firstItem="gGi-md-AhE" firstAttribute="centerX" secondItem="7xh-6a-Hg0" secondAttribute="centerX" id="NNZ-U6-2Tg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pak-bY-si6" secondAttribute="trailing" constant="20" id="dhj-6e-jFd"/>
+                            <constraint firstItem="gGi-md-AhE" firstAttribute="top" secondItem="kfb-bk-kzn" secondAttribute="bottom" constant="25" id="sCj-6E-saA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mifiLogo" destination="gGi-md-AhE" id="GxZ-iR-fRx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yy0-CI-aJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="85.907046476761622"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="fUW-Th-2gX">
+            <objects>
+                <pageViewController storyboardIdentifier="HomePageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ssM-Aq-hxU" customClass="HomePageViewController" customModule="MiFi" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Cs-wC-BKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="86"/>
+        </scene>
+        <!--My Account View Controller-->
+        <scene sceneID="7NO-Fq-gfU">
+            <objects>
+                <viewController storyboardIdentifier="MyAccountViewController" id="xRu-Bp-iU8" customClass="MyAccountViewController" customModule="MiFi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fU2-cR-CMZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ArT-tz-2DQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="car-Mp-Q8L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kws-kS-tfF">
+                                <rect key="frame" x="26" y="170" width="323" height="422"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY ACCOUNT VIEW CONTROLLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFJ-xi-fTc">
+                                        <rect key="frame" x="26" y="45" width="271" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bFJ-xi-fTc" firstAttribute="centerX" secondItem="kws-kS-tfF" secondAttribute="centerX" id="Cbm-P3-rAx"/>
+                                    <constraint firstItem="bFJ-xi-fTc" firstAttribute="top" secondItem="kws-kS-tfF" secondAttribute="top" constant="45" id="F3v-Zk-300"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGX-hJ-OX6" customClass="CustomOptionWheel" customModule="MiFi" customModuleProvider="target">
+                                <rect key="frame" x="162.5" y="567" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Y6n-jh-cgN"/>
+                                    <constraint firstAttribute="height" constant="50" id="hwi-TH-Je5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ArT-tz-2DQ" firstAttribute="top" secondItem="kws-kS-tfF" secondAttribute="bottom" constant="75" id="3KI-ea-yoI"/>
+                            <constraint firstItem="kws-kS-tfF" firstAttribute="leading" secondItem="car-Mp-Q8L" secondAttribute="leadingMargin" constant="10" id="6kg-VG-cga"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kws-kS-tfF" secondAttribute="trailing" constant="10" id="Ltf-40-vM2"/>
+                            <constraint firstItem="ArT-tz-2DQ" firstAttribute="top" secondItem="UGX-hJ-OX6" secondAttribute="bottom" constant="50" id="dro-wF-N3e"/>
+                            <constraint firstItem="kws-kS-tfF" firstAttribute="top" secondItem="fU2-cR-CMZ" secondAttribute="bottom" constant="150" id="fy6-cF-rhr"/>
+                            <constraint firstItem="UGX-hJ-OX6" firstAttribute="centerX" secondItem="car-Mp-Q8L" secondAttribute="centerX" id="hlK-40-5hV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myAccountView" destination="kws-kS-tfF" id="iHb-cO-lEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ro-TG-353" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3497" y="824"/>
+        </scene>
+        <!--Searching Networks View Controller-->
+        <scene sceneID="0YR-bW-opS">
+            <objects>
+                <viewController storyboardIdentifier="SearchingNetworksViewController" id="8qq-1Y-Zax" customClass="SearchingNetworksViewController" customModule="MiFi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HQC-0U-ZPs"/>
+                        <viewControllerLayoutGuide type="bottom" id="hGD-Ro-Phg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uof-5x-n4g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-9M-gJ7">
+                                <rect key="frame" x="26" y="170" width="323" height="397"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unable to find any networks. Please try refreshing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc2-Rc-fXn">
+                                        <rect key="frame" x="20" y="20" width="283" height="108.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuT-rV-aQ6" customClass="CustomButton" customModule="MiFi" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="178.5" width="283" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Fmy-jP-0GL"/>
+                                        </constraints>
+                                        <state key="normal" title="Refresh"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="uc2-Rc-fXn" firstAttribute="leading" secondItem="UYI-9M-gJ7" secondAttribute="leading" constant="20" id="97X-J5-2vC"/>
+                                    <constraint firstItem="uc2-Rc-fXn" firstAttribute="top" secondItem="UYI-9M-gJ7" secondAttribute="top" constant="20" id="C1I-r4-N0D"/>
+                                    <constraint firstItem="WuT-rV-aQ6" firstAttribute="trailing" secondItem="uc2-Rc-fXn" secondAttribute="trailing" id="UBu-sT-2Vv"/>
+                                    <constraint firstItem="uc2-Rc-fXn" firstAttribute="centerX" secondItem="UYI-9M-gJ7" secondAttribute="centerX" id="id8-OH-eOP"/>
+                                    <constraint firstItem="WuT-rV-aQ6" firstAttribute="top" secondItem="uc2-Rc-fXn" secondAttribute="bottom" constant="50" id="qhp-zk-SPA"/>
+                                    <constraint firstAttribute="trailing" secondItem="uc2-Rc-fXn" secondAttribute="trailing" constant="20" id="shZ-zZ-4UH"/>
+                                    <constraint firstItem="WuT-rV-aQ6" firstAttribute="leading" secondItem="uc2-Rc-fXn" secondAttribute="leading" id="uGl-2i-ukJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-J8-JQB">
+                                <rect key="frame" x="27" y="28" width="59" height="81"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UYI-9M-gJ7" firstAttribute="leading" secondItem="lXD-J8-JQB" secondAttribute="leading" id="0vJ-k5-bba"/>
+                            <constraint firstItem="lXD-J8-JQB" firstAttribute="top" secondItem="HQC-0U-ZPs" secondAttribute="bottom" constant="150" id="NDN-Wk-zMT"/>
+                            <constraint firstItem="lXD-J8-JQB" firstAttribute="leading" secondItem="Uof-5x-n4g" secondAttribute="leadingMargin" constant="10" id="QBv-tJ-kYI"/>
+                            <constraint firstItem="UYI-9M-gJ7" firstAttribute="top" secondItem="HQC-0U-ZPs" secondAttribute="bottom" constant="150" id="bZz-aJ-JN2"/>
+                            <constraint firstItem="hGD-Ro-Phg" firstAttribute="top" secondItem="lXD-J8-JQB" secondAttribute="bottom" constant="100" id="e0O-qp-JGZ"/>
+                            <constraint firstItem="lXD-J8-JQB" firstAttribute="bottom" secondItem="UYI-9M-gJ7" secondAttribute="bottom" id="f6C-XB-9cl"/>
+                            <constraint firstItem="UYI-9M-gJ7" firstAttribute="trailing" secondItem="lXD-J8-JQB" secondAttribute="trailing" id="m6a-jH-nRC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lXD-J8-JQB" secondAttribute="trailing" constant="10" id="p22-pE-Qci"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circularSpinnerView" destination="lXD-J8-JQB" id="CoT-x9-tHh"/>
+                        <outlet property="noNetworksFoundView" destination="UYI-9M-gJ7" id="md0-85-ulJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qst-Xp-dQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3496.8000000000002" y="-681.40929535232385"/>
+        </scene>
+        <!--Network View Controller-->
+        <scene sceneID="B3W-Qu-gF7">
+            <objects>
+                <viewController storyboardIdentifier="NetworkViewController" id="yVB-5b-gsj" customClass="NetworkViewController" customModule="MiFi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L64-X4-lak"/>
+                        <viewControllerLayoutGuide type="bottom" id="Udc-v2-hMU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RQj-1y-Jf8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJz-wv-EhW">
+                                <rect key="frame" x="26" y="170" width="323" height="422"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NETWORK VIEW CONTROLLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-5Q-ieO">
+                                        <rect key="frame" x="40.5" y="36" width="242" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mmO-5Q-ieO" firstAttribute="centerX" secondItem="GJz-wv-EhW" secondAttribute="centerX" id="ND0-kG-KLK"/>
+                                    <constraint firstItem="mmO-5Q-ieO" firstAttribute="top" secondItem="GJz-wv-EhW" secondAttribute="top" constant="36" id="r6B-RN-q4h"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nx1-AT-ZmG" customClass="CustomOptionWheel" customModule="MiFi" customModuleProvider="target">
+                                <rect key="frame" x="163" y="567" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0kc-fQ-FoV"/>
+                                    <constraint firstAttribute="height" constant="50" id="aKC-E2-x0n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nx1-AT-ZmG" firstAttribute="centerX" secondItem="RQj-1y-Jf8" secondAttribute="centerX" id="7tg-ni-KqL"/>
+                            <constraint firstItem="GJz-wv-EhW" firstAttribute="leading" secondItem="RQj-1y-Jf8" secondAttribute="leadingMargin" constant="10" id="F49-SB-06B"/>
+                            <constraint firstItem="Udc-v2-hMU" firstAttribute="top" secondItem="GJz-wv-EhW" secondAttribute="bottom" constant="75" id="Gwy-3V-gWd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GJz-wv-EhW" secondAttribute="trailing" constant="10" id="Ord-n6-mqi"/>
+                            <constraint firstItem="Udc-v2-hMU" firstAttribute="top" secondItem="Nx1-AT-ZmG" secondAttribute="bottom" constant="50" id="QCI-nc-xEs"/>
+                            <constraint firstItem="GJz-wv-EhW" firstAttribute="top" secondItem="L64-X4-lak" secondAttribute="bottom" constant="150" id="xEV-Yl-c06"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="networkView" destination="GJz-wv-EhW" id="Pvx-OL-ftQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmu-ZG-ZrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3497" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mifi Logo" width="2000" height="1000"/>
+    </resources>
+</document>

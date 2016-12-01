@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F0A669BBA8379BFFB7AE12 /* Pods_MiFiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05673F8211E9E4609BF956D3 /* Pods_MiFiTests.framework */; };
+		3E33EA1F1DD91F42004EDA35 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA1E1DD91F42004EDA35 /* CustomButton.swift */; };
+		3E33EA211DDA4515004EDA35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA201DDA4515004EDA35 /* SignUpViewController.swift */; };
+		3E33EA231DDCE05B004EDA35 /* CustomOptionWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA221DDCE05B004EDA35 /* CustomOptionWheel.swift */; };
+		3E33EA251DDE2635004EDA35 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA241DDE2635004EDA35 /* HTTPHelper.swift */; };
+		3E33EA271DDE263D004EDA35 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA261DDE263D004EDA35 /* KeychainAccess.swift */; };
+		3E33EA2B1DE61A7E004EDA35 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA2A1DE61A7E004EDA35 /* AESCrypt.m */; };
+		3E33EA2F1DE61AEA004EDA35 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA2E1DE61AEA004EDA35 /* NSData+Base64.m */; };
+		3E33EA321DE61B1D004EDA35 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA311DE61B1D004EDA35 /* NSString+Base64.m */; };
+		3E33EA351DE61B3C004EDA35 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA341DE61B3C004EDA35 /* NSData+CommonCrypto.m */; };
+		3E33EA381DE791EA004EDA35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA371DE791EA004EDA35 /* HomeViewController.swift */; };
+		3E33EA3A1DE792BA004EDA35 /* SearchingNetworksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA391DE792BA004EDA35 /* SearchingNetworksViewController.swift */; };
+		3E33EA3C1DE79341004EDA35 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA3B1DE79341004EDA35 /* MyAccountViewController.swift */; };
+		3E33EA3E1DE7C61E004EDA35 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA3D1DE7C61E004EDA35 /* HomePageViewController.swift */; };
+		3E33EA401DE8A276004EDA35 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA3F1DE8A276004EDA35 /* NetworkViewController.swift */; };
+		3EB3DBB61DD7A46A00CD1D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBB51DD7A46A00CD1D80 /* AppDelegate.swift */; };
+		3EB3DBB81DD7A46A00CD1D80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBB71DD7A46A00CD1D80 /* ViewController.swift */; };
+		3EB3DBBB1DD7A46A00CD1D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3DBB91DD7A46A00CD1D80 /* Main.storyboard */; };
+		3EB3DBBE1DD7A46A00CD1D80 /* MiFi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBBC1DD7A46A00CD1D80 /* MiFi.xcdatamodeld */; };
+		3EB3DBC01DD7A46A00CD1D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3DBBF1DD7A46A00CD1D80 /* Assets.xcassets */; };
+		3EB3DBC31DD7A46A00CD1D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3DBC11DD7A46A00CD1D80 /* LaunchScreen.storyboard */; };
+		3EB3DBCE1DD7A46A00CD1D80 /* MiFiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBCD1DD7A46A00CD1D80 /* MiFiTests.swift */; };
+		3EB3DBD91DD7A46A00CD1D80 /* MiFiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBD81DD7A46A00CD1D80 /* MiFiUITests.swift */; };
+		3EB3DBE71DD7ABEE00CD1D80 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBE61DD7ABEE00CD1D80 /* SignInViewController.swift */; };
+		3EB3DBE91DD7AC4900CD1D80 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBE81DD7AC4900CD1D80 /* Colors.swift */; };
+		3EB3DBEB1DD7ADE700CD1D80 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBEA1DD7ADE700CD1D80 /* CustomTextField.swift */; };
+		6C6E4AEA368DF346F651F381 /* Pods_MiFiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CDEFEF0212987839228037 /* Pods_MiFiUITests.framework */; };
+		6E7797FFC80BC5582125A111 /* Pods_MiFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9509B106CC2ECF4BFD9A02E5 /* Pods_MiFi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EB3DBCA1DD7A46A00CD1D80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EB3DBAA1DD7A46A00CD1D80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EB3DBB11DD7A46A00CD1D80;
+			remoteInfo = MiFi;
+		};
+		3EB3DBD51DD7A46A00CD1D80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EB3DBAA1DD7A46A00CD1D80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EB3DBB11DD7A46A00CD1D80;
+			remoteInfo = MiFi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006BEB9134F1A22D1233784D /* Pods-MiFiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		05673F8211E9E4609BF956D3 /* Pods_MiFiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8E3935BAE3E7873EA3E290 /* Pods-MiFiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiTests/Pods-MiFiTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E33EA1E1DD91F42004EDA35 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3E33EA201DDA4515004EDA35 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3E33EA221DDCE05B004EDA35 /* CustomOptionWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOptionWheel.swift; sourceTree = "<group>"; };
+		3E33EA241DDE2635004EDA35 /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
+		3E33EA261DDE263D004EDA35 /* KeychainAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
+		3E33EA281DE61A7D004EDA35 /* MiFi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiFi-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E33EA291DE61A7E004EDA35 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		3E33EA2A1DE61A7E004EDA35 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		3E33EA2D1DE61AEA004EDA35 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		3E33EA2E1DE61AEA004EDA35 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		3E33EA301DE61B1D004EDA35 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		3E33EA311DE61B1D004EDA35 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		3E33EA331DE61B3C004EDA35 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		3E33EA341DE61B3C004EDA35 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		3E33EA361DE74E59004EDA35 /* MiFi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiFi.entitlements; sourceTree = "<group>"; };
+		3E33EA371DE791EA004EDA35 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3E33EA391DE792BA004EDA35 /* SearchingNetworksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingNetworksViewController.swift; sourceTree = "<group>"; };
+		3E33EA3B1DE79341004EDA35 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		3E33EA3D1DE7C61E004EDA35 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		3E33EA3F1DE8A276004EDA35 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		3EB3DBB21DD7A46A00CD1D80 /* MiFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB3DBB51DD7A46A00CD1D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EB3DBB71DD7A46A00CD1D80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EB3DBBA1DD7A46A00CD1D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EB3DBBD1DD7A46A00CD1D80 /* MiFi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiFi.xcdatamodel; sourceTree = "<group>"; };
+		3EB3DBBF1DD7A46A00CD1D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EB3DBC21DD7A46A00CD1D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EB3DBC41DD7A46A00CD1D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB3DBC91DD7A46A00CD1D80 /* MiFiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiFiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB3DBCD1DD7A46A00CD1D80 /* MiFiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiFiTests.swift; sourceTree = "<group>"; };
+		3EB3DBCF1DD7A46A00CD1D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB3DBD41DD7A46A00CD1D80 /* MiFiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiFiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB3DBD81DD7A46A00CD1D80 /* MiFiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiFiUITests.swift; sourceTree = "<group>"; };
+		3EB3DBDA1DD7A46A00CD1D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB3DBE61DD7ABEE00CD1D80 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3EB3DBE81DD7AC4900CD1D80 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3EB3DBEA1DD7ADE700CD1D80 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		56D335C621885F97A2CD0B1F /* Pods-MiFiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		77CDEFEF0212987839228037 /* Pods_MiFiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9509B106CC2ECF4BFD9A02E5 /* Pods_MiFi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DA5C07BACE8BEF06557608 /* Pods-MiFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFi.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiFi/Pods-MiFi.release.xcconfig"; sourceTree = "<group>"; };
+		F6BE9AA2E153B3285A2BA37B /* Pods-MiFi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiFi/Pods-MiFi.debug.xcconfig"; sourceTree = "<group>"; };
+		FA5DA015878893035020AB32 /* Pods-MiFiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiTests/Pods-MiFiTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EB3DBAF1DD7A46A00CD1D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7797FFC80BC5582125A111 /* Pods_MiFi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB3DBC61DD7A46A00CD1D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F0A669BBA8379BFFB7AE12 /* Pods_MiFiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB3DBD11DD7A46A00CD1D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C6E4AEA368DF346F651F381 /* Pods_MiFiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E33EA2C1DE61A9A004EDA35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EB3DBC41DD7A46A00CD1D80 /* Info.plist */,
+				3E33EA281DE61A7D004EDA35 /* MiFi-Bridging-Header.h */,
+				3E33EA291DE61A7E004EDA35 /* AESCrypt.h */,
+				3E33EA2A1DE61A7E004EDA35 /* AESCrypt.m */,
+				3E33EA2D1DE61AEA004EDA35 /* NSData+Base64.h */,
+				3E33EA2E1DE61AEA004EDA35 /* NSData+Base64.m */,
+				3E33EA301DE61B1D004EDA35 /* NSString+Base64.h */,
+				3E33EA311DE61B1D004EDA35 /* NSString+Base64.m */,
+				3E33EA331DE61B3C004EDA35 /* NSData+CommonCrypto.h */,
+				3E33EA341DE61B3C004EDA35 /* NSData+CommonCrypto.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EB3DBA91DD7A46A00CD1D80 = {
+			isa = PBXGroup;
+			children = (
+				3EB3DBB41DD7A46A00CD1D80 /* MiFi */,
+				3EB3DBCC1DD7A46A00CD1D80 /* MiFiTests */,
+				3EB3DBD71DD7A46A00CD1D80 /* MiFiUITests */,
+				3EB3DBB31DD7A46A00CD1D80 /* Products */,
+				5F801CD8658075E853141C15 /* Pods */,
+				CF2513517F9094E50E206F60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3EB3DBB31DD7A46A00CD1D80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EB3DBB21DD7A46A00CD1D80 /* MiFi.app */,
+				3EB3DBC91DD7A46A00CD1D80 /* MiFiTests.xctest */,
+				3EB3DBD41DD7A46A00CD1D80 /* MiFiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EB3DBB41DD7A46A00CD1D80 /* MiFi */ = {
+			isa = PBXGroup;
+			children = (
+				3E33EA361DE74E59004EDA35 /* MiFi.entitlements */,
+				3EB3DBB51DD7A46A00CD1D80 /* AppDelegate.swift */,
+				3E33EA241DDE2635004EDA35 /* HTTPHelper.swift */,
+				3E33EA261DDE263D004EDA35 /* KeychainAccess.swift */,
+				3EB3DBB71DD7A46A00CD1D80 /* ViewController.swift */,
+				3EB3DBE61DD7ABEE00CD1D80 /* SignInViewController.swift */,
+				3E33EA201DDA4515004EDA35 /* SignUpViewController.swift */,
+				3E33EA371DE791EA004EDA35 /* HomeViewController.swift */,
+				3E33EA3D1DE7C61E004EDA35 /* HomePageViewController.swift */,
+				3E33EA391DE792BA004EDA35 /* SearchingNetworksViewController.swift */,
+				3E33EA3F1DE8A276004EDA35 /* NetworkViewController.swift */,
+				3E33EA3B1DE79341004EDA35 /* MyAccountViewController.swift */,
+				3EB3DBB91DD7A46A00CD1D80 /* Main.storyboard */,
+				3EB3DBBF1DD7A46A00CD1D80 /* Assets.xcassets */,
+				3EB3DBC11DD7A46A00CD1D80 /* LaunchScreen.storyboard */,
+				3EB3DBBC1DD7A46A00CD1D80 /* MiFi.xcdatamodeld */,
+				3EB3DBE81DD7AC4900CD1D80 /* Colors.swift */,
+				3EB3DBEA1DD7ADE700CD1D80 /* CustomTextField.swift */,
+				3E33EA1E1DD91F42004EDA35 /* CustomButton.swift */,
+				3E33EA221DDCE05B004EDA35 /* CustomOptionWheel.swift */,
+				3E33EA2C1DE61A9A004EDA35 /* Supporting Files */,
+			);
+			path = MiFi;
+			sourceTree = "<group>";
+		};
+		3EB3DBCC1DD7A46A00CD1D80 /* MiFiTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EB3DBCD1DD7A46A00CD1D80 /* MiFiTests.swift */,
+				3EB3DBCF1DD7A46A00CD1D80 /* Info.plist */,
+			);
+			path = MiFiTests;
+			sourceTree = "<group>";
+		};
+		3EB3DBD71DD7A46A00CD1D80 /* MiFiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EB3DBD81DD7A46A00CD1D80 /* MiFiUITests.swift */,
+				3EB3DBDA1DD7A46A00CD1D80 /* Info.plist */,
+			);
+			path = MiFiUITests;
+			sourceTree = "<group>";
+		};
+		5F801CD8658075E853141C15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6BE9AA2E153B3285A2BA37B /* Pods-MiFi.debug.xcconfig */,
+				A1DA5C07BACE8BEF06557608 /* Pods-MiFi.release.xcconfig */,
+				FA5DA015878893035020AB32 /* Pods-MiFiTests.debug.xcconfig */,
+				0C8E3935BAE3E7873EA3E290 /* Pods-MiFiTests.release.xcconfig */,
+				56D335C621885F97A2CD0B1F /* Pods-MiFiUITests.debug.xcconfig */,
+				006BEB9134F1A22D1233784D /* Pods-MiFiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF2513517F9094E50E206F60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9509B106CC2ECF4BFD9A02E5 /* Pods_MiFi.framework */,
+				05673F8211E9E4609BF956D3 /* Pods_MiFiTests.framework */,
+				77CDEFEF0212987839228037 /* Pods_MiFiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EB3DBB11DD7A46A00CD1D80 /* MiFi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB3DBDD1DD7A46A00CD1D80 /* Build configuration list for PBXNativeTarget "MiFi" */;
+			buildPhases = (
+				BA39ABA913294031AB65219B /* [CP] Check Pods Manifest.lock */,
+				3EB3DBAE1DD7A46A00CD1D80 /* Sources */,
+				3EB3DBAF1DD7A46A00CD1D80 /* Frameworks */,
+				3EB3DBB01DD7A46A00CD1D80 /* Resources */,
+				EFBACF0153E77EC98D97FC39 /* [CP] Embed Pods Frameworks */,
+				D023B43C54A9123AC15EF6AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiFi;
+			productName = MiFi;
+			productReference = 3EB3DBB21DD7A46A00CD1D80 /* MiFi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EB3DBC81DD7A46A00CD1D80 /* MiFiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB3DBE01DD7A46A00CD1D80 /* Build configuration list for PBXNativeTarget "MiFiTests" */;
+			buildPhases = (
+				9A61A5CE9C6375F0A42A7479 /* [CP] Check Pods Manifest.lock */,
+				3EB3DBC51DD7A46A00CD1D80 /* Sources */,
+				3EB3DBC61DD7A46A00CD1D80 /* Frameworks */,
+				3EB3DBC71DD7A46A00CD1D80 /* Resources */,
+				D6256145CAC9D77808581573 /* [CP] Embed Pods Frameworks */,
+				41657C856C009AEF79A84D8D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EB3DBCB1DD7A46A00CD1D80 /* PBXTargetDependency */,
+			);
+			name = MiFiTests;
+			productName = MiFiTests;
+			productReference = 3EB3DBC91DD7A46A00CD1D80 /* MiFiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EB3DBD31DD7A46A00CD1D80 /* MiFiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB3DBE31DD7A46A00CD1D80 /* Build configuration list for PBXNativeTarget "MiFiUITests" */;
+			buildPhases = (
+				C4D61ED4E804F03610D4292A /* [CP] Check Pods Manifest.lock */,
+				3EB3DBD01DD7A46A00CD1D80 /* Sources */,
+				3EB3DBD11DD7A46A00CD1D80 /* Frameworks */,
+				3EB3DBD21DD7A46A00CD1D80 /* Resources */,
+				676C271B927F125B888DF9F6 /* [CP] Embed Pods Frameworks */,
+				CBBD660F6D1BF879AEE2D02F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EB3DBD61DD7A46A00CD1D80 /* PBXTargetDependency */,
+			);
+			name = MiFiUITests;
+			productName = MiFiUITests;
+			productReference = 3EB3DBD41DD7A46A00CD1D80 /* MiFiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EB3DBAA1DD7A46A00CD1D80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Tristan Secord";
+				TargetAttributes = {
+					3EB3DBB11DD7A46A00CD1D80 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 53JNKRDHHA;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					3EB3DBC81DD7A46A00CD1D80 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 53JNKRDHHA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3EB3DBB11DD7A46A00CD1D80;
+					};
+					3EB3DBD31DD7A46A00CD1D80 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 53JNKRDHHA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3EB3DBB11DD7A46A00CD1D80;
+					};
+				};
+			};
+			buildConfigurationList = 3EB3DBAD1DD7A46A00CD1D80 /* Build configuration list for PBXProject "MiFi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EB3DBA91DD7A46A00CD1D80;
+			productRefGroup = 3EB3DBB31DD7A46A00CD1D80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EB3DBB11DD7A46A00CD1D80 /* MiFi */,
+				3EB3DBC81DD7A46A00CD1D80 /* MiFiTests */,
+				3EB3DBD31DD7A46A00CD1D80 /* MiFiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EB3DBB01DD7A46A00CD1D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB3DBC31DD7A46A00CD1D80 /* LaunchScreen.storyboard in Resources */,
+				3EB3DBC01DD7A46A00CD1D80 /* Assets.xcassets in Resources */,
+				3EB3DBBB1DD7A46A00CD1D80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB3DBC71DD7A46A00CD1D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB3DBD21DD7A46A00CD1D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41657C856C009AEF79A84D8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiFiTests/Pods-MiFiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		676C271B927F125B888DF9F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A61A5CE9C6375F0A42A7479 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA39ABA913294031AB65219B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D61ED4E804F03610D4292A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBBD660F6D1BF879AEE2D02F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D023B43C54A9123AC15EF6AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiFi/Pods-MiFi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6256145CAC9D77808581573 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiFiTests/Pods-MiFiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFBACF0153E77EC98D97FC39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiFi/Pods-MiFi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EB3DBAE1DD7A46A00CD1D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E33EA3A1DE792BA004EDA35 /* SearchingNetworksViewController.swift in Sources */,
+				3EB3DBE71DD7ABEE00CD1D80 /* SignInViewController.swift in Sources */,
+				3EB3DBE91DD7AC4900CD1D80 /* Colors.swift in Sources */,
+				3E33EA401DE8A276004EDA35 /* NetworkViewController.swift in Sources */,
+				3E33EA351DE61B3C004EDA35 /* NSData+CommonCrypto.m in Sources */,
+				3E33EA211DDA4515004EDA35 /* SignUpViewController.swift in Sources */,
+				3EB3DBEB1DD7ADE700CD1D80 /* CustomTextField.swift in Sources */,
+				3E33EA2B1DE61A7E004EDA35 /* AESCrypt.m in Sources */,
+				3EB3DBB81DD7A46A00CD1D80 /* ViewController.swift in Sources */,
+				3E33EA3C1DE79341004EDA35 /* MyAccountViewController.swift in Sources */,
+				3E33EA321DE61B1D004EDA35 /* NSString+Base64.m in Sources */,
+				3E33EA271DDE263D004EDA35 /* KeychainAccess.swift in Sources */,
+				3E33EA1F1DD91F42004EDA35 /* CustomButton.swift in Sources */,
+				3EB3DBBE1DD7A46A00CD1D80 /* MiFi.xcdatamodeld in Sources */,
+				3E33EA381DE791EA004EDA35 /* HomeViewController.swift in Sources */,
+				3E33EA251DDE2635004EDA35 /* HTTPHelper.swift in Sources */,
+				3E33EA231DDCE05B004EDA35 /* CustomOptionWheel.swift in Sources */,
+				3E33EA2F1DE61AEA004EDA35 /* NSData+Base64.m in Sources */,
+				3EB3DBB61DD7A46A00CD1D80 /* AppDelegate.swift in Sources */,
+				3E33EA3E1DE7C61E004EDA35 /* HomePageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB3DBC51DD7A46A00CD1D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB3DBCE1DD7A46A00CD1D80 /* MiFiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB3DBD01DD7A46A00CD1D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB3DBD91DD7A46A00CD1D80 /* MiFiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EB3DBCB1DD7A46A00CD1D80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EB3DBB11DD7A46A00CD1D80 /* MiFi */;
+			targetProxy = 3EB3DBCA1DD7A46A00CD1D80 /* PBXContainerItemProxy */;
+		};
+		3EB3DBD61DD7A46A00CD1D80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EB3DBB11DD7A46A00CD1D80 /* MiFi */;
+			targetProxy = 3EB3DBD51DD7A46A00CD1D80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EB3DBB91DD7A46A00CD1D80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EB3DBBA1DD7A46A00CD1D80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EB3DBC11DD7A46A00CD1D80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EB3DBC21DD7A46A00CD1D80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EB3DBDB1DD7A46A00CD1D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EB3DBDC1DD7A46A00CD1D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EB3DBDE1DD7A46A00CD1D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6BE9AA2E153B3285A2BA37B /* Pods-MiFi.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MiFi/MiFi.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tristan Secord (2F893777Z9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c0a9e38b-6536-47de-a86b-292d1c4bc0c0";
+				PROVISIONING_PROFILE_SPECIFIER = "MiFi Development Profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiFi/MiFi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3EB3DBDF1DD7A46A00CD1D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DA5C07BACE8BEF06557608 /* Pods-MiFi.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MiFi/MiFi.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tristan Secord (2F893777Z9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c0a9e38b-6536-47de-a86b-292d1c4bc0c0";
+				PROVISIONING_PROFILE_SPECIFIER = "MiFi Development Profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiFi/MiFi-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3EB3DBE11DD7A46A00CD1D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5DA015878893035020AB32 /* Pods-MiFiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi.MiFiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiFi.app/MiFi";
+			};
+			name = Debug;
+		};
+		3EB3DBE21DD7A46A00CD1D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8E3935BAE3E7873EA3E290 /* Pods-MiFiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi.MiFiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiFi.app/MiFi";
+			};
+			name = Release;
+		};
+		3EB3DBE41DD7A46A00CD1D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D335C621885F97A2CD0B1F /* Pods-MiFiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi.MiFiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiFi;
+			};
+			name = Debug;
+		};
+		3EB3DBE51DD7A46A00CD1D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 006BEB9134F1A22D1233784D /* Pods-MiFiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi.MiFiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiFi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EB3DBAD1DD7A46A00CD1D80 /* Build configuration list for PBXProject "MiFi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB3DBDB1DD7A46A00CD1D80 /* Debug */,
+				3EB3DBDC1DD7A46A00CD1D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB3DBDD1DD7A46A00CD1D80 /* Build configuration list for PBXNativeTarget "MiFi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB3DBDE1DD7A46A00CD1D80 /* Debug */,
+				3EB3DBDF1DD7A46A00CD1D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB3DBE01DD7A46A00CD1D80 /* Build configuration list for PBXNativeTarget "MiFiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB3DBE11DD7A46A00CD1D80 /* Debug */,
+				3EB3DBE21DD7A46A00CD1D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB3DBE31DD7A46A00CD1D80 /* Build configuration list for PBXNativeTarget "MiFiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB3DBE41DD7A46A00CD1D80 /* Debug */,
+				3EB3DBE51DD7A46A00CD1D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3EB3DBBC1DD7A46A00CD1D80 /* MiFi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3EB3DBBD1DD7A46A00CD1D80 /* MiFi.xcdatamodel */,
+			);
+			currentVersion = 3EB3DBBD1DD7A46A00CD1D80 /* MiFi.xcdatamodel */;
+			path = MiFi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3EB3DBAA1DD7A46A00CD1D80 /* Project object */;
+}
