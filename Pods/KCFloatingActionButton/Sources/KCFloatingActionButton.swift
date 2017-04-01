@@ -172,6 +172,10 @@ open class KCFloatingActionButton: UIView {
 
     fileprivate var overlayView : UIControl = UIControl()
 
+    /**
+        Keep track of whether overlay open animation completes, to avoid animation conflicts.
+     */
+    fileprivate var overlayViewDidCompleteOpenAnimation: Bool = true
 
     /**
         If you created this object from storyboard or `initWithFrame`, this property set true.
@@ -258,6 +262,7 @@ open class KCFloatingActionButton: UIView {
             self.superview?.bringSubview(toFront: self)
             overlayView.addTarget(self, action: #selector(close), for: UIControlEvents.touchUpInside)
 
+            overlayViewDidCompleteOpenAnimation = false
             UIView.animate(withDuration: 0.3, delay: 0,
                 usingSpringWithDamping: 0.55,
                 initialSpringVelocity: 0.3,
@@ -265,7 +270,9 @@ open class KCFloatingActionButton: UIView {
                     self.plusLayer.transform = CATransform3DMakeRotation(self.degreesToRadians(self.rotationDegrees), 0.0, 0.0, 1.0)
                     self.buttonImageView.transform = CGAffineTransform(rotationAngle: self.degreesToRadians(self.rotationDegrees))
                     self.overlayView.alpha = 1
-                }, completion: nil)
+                }, completion: {(f) -> Void in
+                    self.overlayViewDidCompleteOpenAnimation = true
+            })
 
 
             switch openAnimationType {
@@ -302,7 +309,9 @@ open class KCFloatingActionButton: UIView {
                     self.buttonImageView.transform = CGAffineTransform(rotationAngle: self.degreesToRadians(0))
                     self.overlayView.alpha = 0
                 }, completion: {(f) -> Void in
-                    self.overlayView.removeFromSuperview()
+                    if self.overlayViewDidCompleteOpenAnimation {
+                        self.overlayView.removeFromSuperview()
+                    }
             })
 
             switch openAnimationType {
@@ -560,7 +569,6 @@ open class KCFloatingActionButton: UIView {
         item.circleShadowColor = itemShadowColor
         item.titleShadowColor = itemShadowColor
         item.size = itemSize
-        item.titleLabel.font = UIFont(name: item.titleLabel.font.fontName, size: 14.0)
     }
 
     fileprivate func setRightBottomFrame(_ keyboardSize: CGFloat = 0) {
@@ -578,7 +586,6 @@ open class KCFloatingActionButton: UIView {
                 width: size,
                 height: size
             )
-            print(frame)
         }
 
         if friendlyTap == true {
@@ -597,14 +604,14 @@ open class KCFloatingActionButton: UIView {
 
     fileprivate func setObserver() {
         NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange(_:)), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        //NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
-        //NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
 
     deinit {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        //NotificationCenter.default.removeObserver(self, name:NSNotification.Name.UIKeyboardWillShow, object: nil)
-        // NotificationCenter.default.removeObserver(self, name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name:NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
 
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -688,6 +695,10 @@ open class KCFloatingActionButton: UIView {
         guard let keyboardSize: CGFloat = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size.height else {
             return
         }
+        
+        if sticky == true {
+            return
+        }
 
         if isCustomFrame == false {
             setRightBottomFrame(keyboardSize)
@@ -706,6 +717,11 @@ open class KCFloatingActionButton: UIView {
     }
 
     internal func keyboardWillHide(_ notification: Notification) {
+        
+        if sticky == true {
+            return
+        }
+        
         UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions(), animations: {
             if self.isCustomFrame == false {
                 self.setRightBottomFrame()
@@ -865,7 +881,6 @@ extension KCFloatingActionButton {
             itemHeight += item.size + itemSpace
             UIView.animate(withDuration: 0.2, delay: 0, options: [], animations: { () -> Void in
                                         item.frame.origin.y = itemHeight
-                                        item.frame.origin.x = 4
                                         item.alpha = 1
                 }, completion: nil)
         }

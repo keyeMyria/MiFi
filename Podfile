@@ -7,6 +7,11 @@ target 'MiFi' do
   pod 'KCFloatingActionButton'
   pod 'SCLAlertView'
   pod 'CircularSpinner'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'JSSAlertView'
+  pod 'Apollo'
+  pod 'LocationManagerSwift', '~> 1.1'
   use_frameworks!
 
   # Pods for MiFi

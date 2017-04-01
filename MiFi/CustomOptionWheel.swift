@@ -14,12 +14,16 @@ class CustomOptionWheel: KCFloatingActionButton {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         self.rotationDegrees = 45
-        self.buttonColor = Colors.colorWithHexString(Colors.lightBlue())
+        self.buttonColor = Colors.colorWithHexString(Colors.orange())
         self.plusColor = UIColor.white
         self.overlayColor = UIColor.clear
-        self.itemButtonColor = Colors.colorWithHexString(Colors.lightBlue())
+        self.itemButtonColor = Colors.colorWithHexString(Colors.orange())
         self.itemTitleColor = UIColor.lightGray
         self.itemImageColor = UIColor.white
         self.itemShadowColor = UIColor.black
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
 }

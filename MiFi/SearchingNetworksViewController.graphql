@@ -1,0 +1,6 @@
+query SearchForNetworks($city: String!, $latitude: Float!, $longitude: Float!) {
+  networks(city: $city, latitude: $latitude, longitude: $longitude) {
+    name
+    distance
+  }
+}

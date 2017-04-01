@@ -13,9 +13,15 @@ import TextFieldEffects
 class CustomTextField: HoshiTextField {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
-        self.borderActiveColor = Colors.colorWithHexString(Colors.lightBlue())
-        self.borderInactiveColor = UIColor.lightGray
+        self.borderActiveColor = Colors.colorWithHexString(Colors.orange())
+        //self.borderInactiveColor = UIColor.lightGray
+        self.borderInactiveColor = Colors.colorWithHexString(Colors.blue())
         self.placeholderColor = UIColor.lightGray
         self.placeholderFontScale = 1.0
+        self.layer.frame.size.height = 500
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
 }

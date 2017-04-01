@@ -89,7 +89,7 @@ open class CircularSpinner: UIView {
             appearanceDismissButton()
         }
     }
-    open static var trackLineWidth: CGFloat = 6
+    open static var trackLineWidth: CGFloat = 2
     private var lineWidth = trackLineWidth {
         didSet {
             appearanceBackgroundLayer()
@@ -121,7 +121,7 @@ open class CircularSpinner: UIView {
         configure()
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

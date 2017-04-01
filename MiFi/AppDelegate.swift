@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 import UserNotifications
+import Apollo
+
+let apollo = ApolloClient(url: URL(string: "http://localhost:4000/graphiql")!)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let defaults = UserDefaults.standard
     let center = UNUserNotificationCenter.current()
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         center.requestAuthorization(options: [.badge, .sound, .alert]) { (granted, error) in
@@ -107,6 +109,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("i am not available in simulator \(error)")
         
     }
-    
 }
 

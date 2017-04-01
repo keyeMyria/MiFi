@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Apollo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CircularSpinner-CircularSpinner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,7 +24,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSSAlertView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>KCFloatingActionButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LocationManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -39,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,7 +72,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>16CDF82BC75B1DDBF218B1A2D9C17263</key>
+		<key>276A24CDD1359D38F47C99297DACCC39</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +82,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4ACE6E1553B5D8BC3F2352ED85323F5D</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D810277CF931AEA85A9C0CD7C9AD9DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9243B4E22CE57D0DB1884081E53A8B13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9ACF4FB2C602BDA765F1AFAD4535E4D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +112,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB40497093992CDB435AD67D25AE322D</key>
+		<key>BCFA80DBF64DDF6AD6B0926BB8BCAFC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C63CB4AE559E609E163642ED2A914D4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBC9E112F14B08BD6890B01E2261E90B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D368184BEED712B6A15E4767FE420BE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

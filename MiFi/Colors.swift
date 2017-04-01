@@ -11,8 +11,20 @@ import UIKit
 
 open class Colors {
     
-    class func lightBlue() -> String {
+    class func orange() -> String {
         return "#f39c12"
+    }
+    
+    class func darkBlue() -> String {
+        return "#0F0F23"
+    }
+    
+    class func blue() -> String {
+        return "#272759"
+    }
+    
+    class func red() -> String {
+        return "#96281B"
     }
     
     // Creates a UIColor from a Hex string.

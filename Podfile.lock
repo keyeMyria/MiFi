@@ -1,21 +1,36 @@
 PODS:
+  - Alamofire (4.4.0)
+  - Apollo (0.5.6)
   - CircularSpinner (1.2.0)
-  - KCFloatingActionButton (2.1.1)
+  - JSSAlertView (3.0.4)
+  - KCFloatingActionButton (2.2.0)
+  - LocationManagerSwift (1.1.1)
   - SCLAlertView (0.7.0)
-  - TextFieldEffects (1.3.0)
+  - SwiftyJSON (3.1.4)
+  - TextFieldEffects (1.3.2)
 
 DEPENDENCIES:
+  - Alamofire
+  - Apollo
   - CircularSpinner
+  - JSSAlertView
   - KCFloatingActionButton
+  - LocationManagerSwift (~> 1.1)
   - SCLAlertView
+  - SwiftyJSON
   - TextFieldEffects
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Apollo: 124ddbbca48acca75fd5f9ec5045454cb410bb31
   CircularSpinner: 80b8ee3eda59b66d20631d4ca7c7c83720931739
-  KCFloatingActionButton: 084cfe9d16b741be33393c99757f5967296c7645
+  JSSAlertView: 7d8345c88e6fd8b515bc49f0fc8d8c69f6776b9c
+  KCFloatingActionButton: 8c71fa25774e422c8d407f82b4b27809d0cd5233
+  LocationManagerSwift: 85c7aa285844e02a7e15c905df8111362ac75f5b
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
-  TextFieldEffects: ef594746f17997c813e07633f8ae5acaf9b04f27
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TextFieldEffects: 9e5cce561ea39c75b86e9d3637601727a67e8b23
 
-PODFILE CHECKSUM: 5448663cde7af74faffe209c5e6bb6c6a8dc59b9
+PODFILE CHECKSUM: 991403b2ae65135a6293320cb5ad36608b67f192
 
 COCOAPODS: 1.1.1
