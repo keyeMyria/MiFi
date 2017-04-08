@@ -9,9 +9,6 @@
 import UIKit
 import CoreData
 import UserNotifications
-import Apollo
-
-let apollo = ApolloClient(url: URL(string: "http://localhost:4000/graphiql")!)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

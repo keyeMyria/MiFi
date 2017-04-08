@@ -30,6 +30,7 @@
 		3E33EA3C1DE79341004EDA35 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA3B1DE79341004EDA35 /* MyAccountViewController.swift */; };
 		3E33EA3E1DE7C61E004EDA35 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA3D1DE7C61E004EDA35 /* HomePageViewController.swift */; };
 		3E33EA401DE8A276004EDA35 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA3F1DE8A276004EDA35 /* NetworkViewController.swift */; };
+		3E4B55791E949023006A7827 /* AddNetworkViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 3E4B55781E949023006A7827 /* AddNetworkViewController.graphql */; };
 		3E6CABC21E42C99F00C5519B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CABC11E42C99F00C5519B /* Network.swift */; };
 		3E6CABC41E42CAC400C5519B /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CABC31E42CAC400C5519B /* Platform.swift */; };
 		3E6CABC61E42D30900C5519B /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CABC51E42D30900C5519B /* LocationHelper.swift */; };
@@ -74,6 +75,7 @@
 		006BEB9134F1A22D1233784D /* Pods-MiFiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		05673F8211E9E4609BF956D3 /* Pods_MiFiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8E3935BAE3E7873EA3E290 /* Pods-MiFiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiTests/Pods-MiFiTests.release.xcconfig"; sourceTree = "<group>"; };
+		38C448DF87D49C5288CF84E9 /* Pods-MiFi.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFi.dev.xcconfig"; path = "Pods/Target Support Files/Pods-MiFi/Pods-MiFi.dev.xcconfig"; sourceTree = "<group>"; };
 		3E0EA8A61E12DC5F0011C34D /* CustomTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		3E0EA8A71E12DC5F0011C34D /* CustomTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextFieldView.xib; sourceTree = "<group>"; };
 		3E165C3A1E87065C00088D16 /* SignUpViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SignUpViewController.graphql; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		3E33EA3B1DE79341004EDA35 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		3E33EA3D1DE7C61E004EDA35 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		3E33EA3F1DE8A276004EDA35 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		3E4B55781E949023006A7827 /* AddNetworkViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AddNetworkViewController.graphql; sourceTree = "<group>"; };
 		3E6CABC11E42C99F00C5519B /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		3E6CABC31E42CAC400C5519B /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		3E6CABC51E42D30900C5519B /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
@@ -127,10 +130,12 @@
 		3EB3DBE81DD7AC4900CD1D80 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		3EB3DBEA1DD7ADE700CD1D80 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		3ED135561E835A2500BDD3B2 /* SignInViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SignInViewController.graphql; sourceTree = "<group>"; };
+		542FD01ECAE60FE4DBF88605 /* Pods-MiFiUITests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiUITests.dev.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests.dev.xcconfig"; sourceTree = "<group>"; };
 		56D335C621885F97A2CD0B1F /* Pods-MiFiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		77CDEFEF0212987839228037 /* Pods_MiFiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9509B106CC2ECF4BFD9A02E5 /* Pods_MiFi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DA5C07BACE8BEF06557608 /* Pods-MiFi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFi.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiFi/Pods-MiFi.release.xcconfig"; sourceTree = "<group>"; };
+		E7DCB6F1B4C9883FAC26059B /* Pods-MiFiTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiTests.dev.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiTests/Pods-MiFiTests.dev.xcconfig"; sourceTree = "<group>"; };
 		F6BE9AA2E153B3285A2BA37B /* Pods-MiFi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiFi/Pods-MiFi.debug.xcconfig"; sourceTree = "<group>"; };
 		FA5DA015878893035020AB32 /* Pods-MiFiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiTests/Pods-MiFiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,6 +239,7 @@
 				3E33EA391DE792BA004EDA35 /* SearchingNetworksViewController.swift */,
 				3EB3D5781E8CA6800051180D /* SearchingNetworksViewController.graphql */,
 				3E1B879B1E0DC17000EBDDC0 /* AddNetworkViewController.swift */,
+				3E4B55781E949023006A7827 /* AddNetworkViewController.graphql */,
 				3E33EA3F1DE8A276004EDA35 /* NetworkViewController.swift */,
 				3E33EA3B1DE79341004EDA35 /* MyAccountViewController.swift */,
 				3EB3DBB91DD7A46A00CD1D80 /* Main.storyboard */,
@@ -281,6 +287,9 @@
 				0C8E3935BAE3E7873EA3E290 /* Pods-MiFiTests.release.xcconfig */,
 				56D335C621885F97A2CD0B1F /* Pods-MiFiUITests.debug.xcconfig */,
 				006BEB9134F1A22D1233784D /* Pods-MiFiUITests.release.xcconfig */,
+				38C448DF87D49C5288CF84E9 /* Pods-MiFi.dev.xcconfig */,
+				E7DCB6F1B4C9883FAC26059B /* Pods-MiFiTests.dev.xcconfig */,
+				542FD01ECAE60FE4DBF88605 /* Pods-MiFiUITests.dev.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -368,7 +377,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Tristan Secord";
 				TargetAttributes = {
 					3EB3DBB11DD7A46A00CD1D80 = {
@@ -427,6 +436,7 @@
 				3EB3DBC31DD7A46A00CD1D80 /* LaunchScreen.storyboard in Resources */,
 				3EB3DBC01DD7A46A00CD1D80 /* Assets.xcassets in Resources */,
 				3E1B879A1E09E22F00EBDDC0 /* Mayeka Thin Demo.otf in Resources */,
+				3E4B55791E949023006A7827 /* AddNetworkViewController.graphql in Resources */,
 				3EB3D5791E8CA6800051180D /* SearchingNetworksViewController.graphql in Resources */,
 				3E1B87911E09CD6F00EBDDC0 /* networkCell.xib in Resources */,
 				3EB3DBBB1DD7A46A00CD1D80 /* Main.storyboard in Resources */,
@@ -690,11 +700,113 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3E4B55741E933E36006A7827 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "http://localhost:4000/graphiql";
+				API_CLIENT_KEY = wmk38jvebt7h5mmgqu4kaj2vdz1rzre9fftbwjha4dq7rnaxqqucswrzuu1za27w;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Dev;
+		};
+		3E4B55751E933E36006A7827 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C448DF87D49C5288CF84E9 /* Pods-MiFi.dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MiFi/MiFi.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tristan Secord (2F893777Z9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c0a9e38b-6536-47de-a86b-292d1c4bc0c0";
+				PROVISIONING_PROFILE_SPECIFIER = "MiFi Development Profile";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiFi/MiFi-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Dev;
+		};
+		3E4B55761E933E36006A7827 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DCB6F1B4C9883FAC26059B /* Pods-MiFiTests.dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi.MiFiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiFi.app/MiFi";
+			};
+			name = Dev;
+		};
+		3E4B55771E933E36006A7827 /* Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 542FD01ECAE60FE4DBF88605 /* Pods-MiFiUITests.dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 53JNKRDHHA;
+				INFOPLIST_FILE = MiFiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsecord.mifi.MiFiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiFi;
+			};
+			name = Dev;
+		};
 		3EB3DBDB1DD7A46A00CD1D80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "http://10.0.9.189:4000/graphiql";
+				API_CLIENT_KEY = wmk38jvebt7h5mmgqu4kaj2vdz1rzre9fftbwjha4dq7rnaxqqucswrzuu1za27w;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -747,6 +859,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "http://tms.mifi.com/graphiql";
+				API_CLIENT_KEY = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -902,6 +1016,7 @@
 			buildConfigurations = (
 				3EB3DBDB1DD7A46A00CD1D80 /* Debug */,
 				3EB3DBDC1DD7A46A00CD1D80 /* Release */,
+				3E4B55741E933E36006A7827 /* Dev */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -911,6 +1026,7 @@
 			buildConfigurations = (
 				3EB3DBDE1DD7A46A00CD1D80 /* Debug */,
 				3EB3DBDF1DD7A46A00CD1D80 /* Release */,
+				3E4B55751E933E36006A7827 /* Dev */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -920,6 +1036,7 @@
 			buildConfigurations = (
 				3EB3DBE11DD7A46A00CD1D80 /* Debug */,
 				3EB3DBE21DD7A46A00CD1D80 /* Release */,
+				3E4B55761E933E36006A7827 /* Dev */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -929,6 +1046,7 @@
 			buildConfigurations = (
 				3EB3DBE41DD7A46A00CD1D80 /* Debug */,
 				3EB3DBE51DD7A46A00CD1D80 /* Release */,
+				3E4B55771E933E36006A7827 /* Dev */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

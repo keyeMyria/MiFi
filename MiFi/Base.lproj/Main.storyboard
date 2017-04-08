@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -169,8 +169,6 @@
                     <connections>
                         <outlet property="email" destination="XGG-4k-I60" id="dWh-16-HcF"/>
                         <outlet property="password" destination="sRt-as-2LZ" id="hlu-cb-cb5"/>
-                        <outlet property="signIn" destination="a7c-Zm-jYn" id="u8V-Kz-e6N"/>
-                        <outlet property="signInView" destination="Ija-ab-nVc" id="Rn3-bt-kPt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -382,7 +380,6 @@
                         <outlet property="email" destination="ry4-j5-dVO" id="1nB-KF-8aI"/>
                         <outlet property="name" destination="5Z4-tx-CQi" id="hwF-Ve-mg1"/>
                         <outlet property="password" destination="XdA-pI-V8D" id="vUA-8V-8hm"/>
-                        <outlet property="signUpButton" destination="FP7-Ie-AEm" id="AQL-9q-sns"/>
                         <outlet property="signUpScrollView" destination="u2b-3c-DaM" id="GpR-Vr-HsL"/>
                         <outlet property="verifyPassword" destination="6SN-X8-OUU" id="7bv-Xq-DDy"/>
                     </connections>
@@ -466,6 +463,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAO-5F-qE2" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="326" y="28" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="TLM-9Q-5DT"/>
+                                    <constraint firstAttribute="width" constant="25" id="fCH-Mq-ERn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballClipRotateMultiple"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-9M-gJ7">
                                 <rect key="frame" x="16" y="20" width="343" height="647"/>
                                 <subviews>
@@ -487,6 +498,9 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="refreshPressed:" destination="8qq-1Y-Zax" eventType="touchUpInside" id="W9B-Kp-Rfh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -529,9 +543,11 @@
                             <constraint firstItem="KBB-Mt-KE5" firstAttribute="top" secondItem="HQC-0U-ZPs" secondAttribute="bottom" id="5mu-pg-Rvt"/>
                             <constraint firstItem="hGD-Ro-Phg" firstAttribute="top" secondItem="UYI-9M-gJ7" secondAttribute="bottom" id="P4K-V8-9u9"/>
                             <constraint firstItem="lXD-J8-JQB" firstAttribute="leading" secondItem="Uof-5x-n4g" secondAttribute="leadingMargin" id="QBv-tJ-kYI"/>
+                            <constraint firstItem="nAO-5F-qE2" firstAttribute="top" secondItem="HQC-0U-ZPs" secondAttribute="bottom" constant="8" id="ajo-FG-Vol"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KBB-Mt-KE5" secondAttribute="trailing" id="cjN-2O-gWO"/>
                             <constraint firstItem="hGD-Ro-Phg" firstAttribute="top" secondItem="lXD-J8-JQB" secondAttribute="bottom" id="e0O-qp-JGZ"/>
                             <constraint firstItem="UYI-9M-gJ7" firstAttribute="top" secondItem="HQC-0U-ZPs" secondAttribute="bottom" id="hJb-1t-WdB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nAO-5F-qE2" secondAttribute="trailing" constant="8" id="p18-h9-23M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lXD-J8-JQB" secondAttribute="trailing" id="p22-pE-Qci"/>
                             <constraint firstItem="UYI-9M-gJ7" firstAttribute="leading" secondItem="Uof-5x-n4g" secondAttribute="leadingMargin" id="pWE-Pc-1Vf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UYI-9M-gJ7" secondAttribute="trailing" id="q73-eb-XDA"/>
@@ -539,6 +555,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="nAO-5F-qE2" id="7sw-Wl-BUV"/>
                         <outlet property="circularSpinnerView" destination="lXD-J8-JQB" id="CoT-x9-tHh"/>
                         <outlet property="networksTableView" destination="6ij-ED-ag7" id="vwi-Po-jTg"/>
                         <outlet property="networksView" destination="KBB-Mt-KE5" id="9Vx-LO-g8A"/>
@@ -561,11 +578,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3S5-Uv-O9q">
+                                <rect key="frame" x="0.0" y="28" width="375" height="631"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unable to find any networks. Please try refreshing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6b-KZ-F5x">
+                                        <rect key="frame" x="20.5" y="100" width="335" height="132.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCl-eP-g0S" customClass="CustomButton" customModule="MiFi" customModuleProvider="target">
+                                        <rect key="frame" x="20.5" y="282.5" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sNJ-Un-ByZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Refresh">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="R6b-KZ-F5x" firstAttribute="centerX" secondItem="3S5-Uv-O9q" secondAttribute="centerX" id="Mu9-g7-eci"/>
+                                    <constraint firstItem="TCl-eP-g0S" firstAttribute="trailing" secondItem="R6b-KZ-F5x" secondAttribute="trailing" id="ZM7-t1-jOo"/>
+                                    <constraint firstItem="TCl-eP-g0S" firstAttribute="leading" secondItem="R6b-KZ-F5x" secondAttribute="leading" id="fnr-by-aR3"/>
+                                    <constraint firstItem="R6b-KZ-F5x" firstAttribute="leading" secondItem="3S5-Uv-O9q" secondAttribute="leading" constant="20" id="oea-NL-sUD"/>
+                                    <constraint firstAttribute="trailing" secondItem="R6b-KZ-F5x" secondAttribute="trailing" constant="20" id="rn9-Gx-e4X"/>
+                                    <constraint firstItem="TCl-eP-g0S" firstAttribute="top" secondItem="R6b-KZ-F5x" secondAttribute="bottom" constant="50" id="xRk-EJ-UvJ"/>
+                                    <constraint firstItem="R6b-KZ-F5x" firstAttribute="top" secondItem="3S5-Uv-O9q" secondAttribute="top" constant="100" id="zhl-ay-iJA"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4B-fy-XtC">
                                 <rect key="frame" x="0.0" y="28" width="375" height="631"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY5-BO-b3Q">
-                                        <rect key="frame" x="94" y="20" width="189" height="45"/>
+                                        <rect key="frame" x="93" y="20" width="189" height="45"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="32"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -582,7 +633,7 @@
                                         </constraints>
                                         <state key="normal" title="Add Network"/>
                                         <connections>
-                                            <action selector="addNetwork:" destination="MKd-nD-TKR" eventType="touchUpInside" id="rWs-RT-kOY"/>
+                                            <action selector="addNetworkPressed:" destination="MKd-nD-TKR" eventType="touchUpInside" id="2Ni-v0-zDT"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbA-iF-fDa" customClass="CustomTextFieldView" customModule="MiFi" customModuleProvider="target">
@@ -669,13 +720,19 @@
                         <constraints>
                             <constraint firstItem="U4B-fy-XtC" firstAttribute="centerX" secondItem="W15-jt-PSo" secondAttribute="centerX" id="4hc-zp-enf"/>
                             <constraint firstItem="U4B-fy-XtC" firstAttribute="width" secondItem="W15-jt-PSo" secondAttribute="width" id="6qz-Ya-daO"/>
+                            <constraint firstItem="3S5-Uv-O9q" firstAttribute="centerX" secondItem="W15-jt-PSo" secondAttribute="centerX" id="9KV-Pn-P6O"/>
+                            <constraint firstItem="3S5-Uv-O9q" firstAttribute="top" secondItem="MsE-hp-RSy" secondAttribute="bottom" constant="8" symbolic="YES" id="JTV-sl-eDN"/>
                             <constraint firstItem="U4B-fy-XtC" firstAttribute="top" secondItem="MsE-hp-RSy" secondAttribute="bottom" constant="8" symbolic="YES" id="Zed-eW-eVd"/>
                             <constraint firstItem="7O0-FT-YXU" firstAttribute="top" secondItem="U4B-fy-XtC" secondAttribute="bottom" constant="8" symbolic="YES" id="gBg-IY-WOE"/>
+                            <constraint firstItem="3S5-Uv-O9q" firstAttribute="width" secondItem="W15-jt-PSo" secondAttribute="width" id="oYr-9H-eQe"/>
+                            <constraint firstItem="7O0-FT-YXU" firstAttribute="top" secondItem="3S5-Uv-O9q" secondAttribute="bottom" constant="8" symbolic="YES" id="qf6-kv-3uD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addNetworkView" destination="U4B-fy-XtC" id="8sU-tZ-YP2"/>
                         <outlet property="discoverable" destination="irO-F9-x70" id="fos-L2-yFO"/>
                         <outlet property="networkName" destination="PbA-iF-fDa" id="hmD-rN-syZ"/>
+                        <outlet property="noNetworkView" destination="3S5-Uv-O9q" id="Ml0-BL-1Yr"/>
                         <outlet property="password" destination="VFk-mh-UHZ" id="LPI-Op-eEb"/>
                         <outlet property="verifyPassword" destination="5ho-as-gFf" id="iVA-mt-byr"/>
                     </connections>

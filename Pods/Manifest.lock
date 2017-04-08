@@ -5,6 +5,7 @@ PODS:
   - JSSAlertView (3.0.4)
   - KCFloatingActionButton (2.2.0)
   - LocationManagerSwift (1.1.1)
+  - NVActivityIndicatorView (3.6.0)
   - SCLAlertView (0.7.0)
   - SwiftyJSON (3.1.4)
   - TextFieldEffects (1.3.2)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - JSSAlertView
   - KCFloatingActionButton
   - LocationManagerSwift (~> 1.1)
+  - NVActivityIndicatorView
   - SCLAlertView
   - SwiftyJSON
   - TextFieldEffects
@@ -27,10 +29,11 @@ SPEC CHECKSUMS:
   JSSAlertView: 7d8345c88e6fd8b515bc49f0fc8d8c69f6776b9c
   KCFloatingActionButton: 8c71fa25774e422c8d407f82b4b27809d0cd5233
   LocationManagerSwift: 85c7aa285844e02a7e15c905df8111362ac75f5b
+  NVActivityIndicatorView: c7c1c4300b418bd9ed06459e78d4df859ddbe31f
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TextFieldEffects: 9e5cce561ea39c75b86e9d3637601727a67e8b23
 
-PODFILE CHECKSUM: 991403b2ae65135a6293320cb5ad36608b67f192
+PODFILE CHECKSUM: 40969743b825ce2da262947027d5800368244977
 
 COCOAPODS: 1.1.1

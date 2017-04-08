@@ -10,14 +10,16 @@ import Foundation
 import UIKit
 
 class networkCell: UITableViewCell {
-    @IBOutlet weak var networkName: UILabel!
-    @IBOutlet weak var distance: UILabel!
-    @IBOutlet weak var distanceView: UIView!
-    @IBOutlet weak var networkNameView: UIView!
-    @IBOutlet weak var selectedCellSeparator: UIView!
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        distanceView.backgroundColor = Colors.colorWithHexString(Colors.blue())
-    }
+  @IBOutlet weak var networkName: UILabel!
+  @IBOutlet weak var distance: UILabel!
+  @IBOutlet weak var leftIconView: UIView!
+  @IBOutlet weak var networkNameView: UIView!
+  @IBOutlet weak var selectedCellSeparator: UIView!
+  @IBOutlet weak var distanceSeperatorView: UIView!
+  
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    leftIconView.backgroundColor = Colors.colorWithHexString(Colors.blue())
+    distanceSeperatorView.backgroundColor = Colors.colorWithHexString(Colors.blue())
+  }
 }

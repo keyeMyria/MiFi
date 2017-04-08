@@ -12,6 +12,7 @@ target 'MiFi' do
   pod 'JSSAlertView'
   pod 'Apollo'
   pod 'LocationManagerSwift', '~> 1.1'
+  pod 'NVActivityIndicatorView'
   use_frameworks!
 
   # Pods for MiFi

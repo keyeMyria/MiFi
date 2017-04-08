@@ -2,6 +2,59 @@
 
 import Apollo
 
+public final class CreateNetworkMutation: GraphQLMutation {
+  public static let operationDefinition =
+    "mutation CreateNetwork($name: String!, $bssid: String!, $discoverable: Boolean!, $latitude: Float!, $longitude: Float!, $city: String!, $password: String!) {" +
+    "  createNetwork(name: $name, bssid: $bssid, discoverable: $discoverable, latitude: $latitude, longitude: $longitude, city: $city, password: $password) {" +
+    "    __typename" +
+    "    name" +
+    "    discoverable" +
+    "  }" +
+    "}"
+
+  public let name: String
+  public let bssid: String
+  public let discoverable: Bool
+  public let latitude: Double
+  public let longitude: Double
+  public let city: String
+  public let password: String
+
+  public init(name: String, bssid: String, discoverable: Bool, latitude: Double, longitude: Double, city: String, password: String) {
+    self.name = name
+    self.bssid = bssid
+    self.discoverable = discoverable
+    self.latitude = latitude
+    self.longitude = longitude
+    self.city = city
+    self.password = password
+  }
+
+  public var variables: GraphQLMap? {
+    return ["name": name, "bssid": bssid, "discoverable": discoverable, "latitude": latitude, "longitude": longitude, "city": city, "password": password]
+  }
+
+  public struct Data: GraphQLMappable {
+    public let createNetwork: CreateNetwork?
+
+    public init(reader: GraphQLResultReader) throws {
+      createNetwork = try reader.optionalValue(for: Field(responseName: "createNetwork", arguments: ["name": reader.variables["name"], "bssid": reader.variables["bssid"], "discoverable": reader.variables["discoverable"], "latitude": reader.variables["latitude"], "longitude": reader.variables["longitude"], "city": reader.variables["city"], "password": reader.variables["password"]]))
+    }
+
+    public struct CreateNetwork: GraphQLMappable {
+      public let __typename: String
+      public let name: String?
+      public let discoverable: Bool?
+
+      public init(reader: GraphQLResultReader) throws {
+        __typename = try reader.value(for: Field(responseName: "__typename"))
+        name = try reader.optionalValue(for: Field(responseName: "name"))
+        discoverable = try reader.optionalValue(for: Field(responseName: "discoverable"))
+      }
+    }
+  }
+}
+
 public final class SearchForNetworksQuery: GraphQLQuery {
   public static let operationDefinition =
     "query SearchForNetworks($city: String!, $latitude: Float!, $longitude: Float!) {" +

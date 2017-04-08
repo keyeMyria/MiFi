@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9ACF4FB2C602BDA765F1AFAD4535E4D2"
+               BlueprintIdentifier = "D4AA1386A3CA3854E0A8AC807F66B21E"
                BuildableName = "Pods_MiFi.framework"
                BlueprintName = "Pods-MiFi"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9ACF4FB2C602BDA765F1AFAD4535E4D2"
+            BlueprintIdentifier = "D4AA1386A3CA3854E0A8AC807F66B21E"
             BuildableName = "Pods_MiFi.framework"
             BlueprintName = "Pods-MiFi"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -54,5 +54,9 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Will you allow this app to know your current location?</string>
+	<key>API_BASE_URL</key>
+	<string>$(API_BASE_URL)</string>
+	<key>API_CLIENT_KEY</key>
+	<string>$(API_CLIENT_KEY)</string>
 </dict>
 </plist>

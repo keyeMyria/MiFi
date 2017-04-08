@@ -15,12 +15,16 @@ import JSSAlertView
 import Apollo
 
 class SignInViewController: UIViewController {
-  
   @IBOutlet weak var email: CustomTextField!
   @IBOutlet weak var password: CustomTextField!
-  @IBOutlet weak var signIn: CustomButton!
   let defaults = UserDefaults.standard
-  var session: UserLoginMutation.Data.Login?
+  var apollo: ApolloClient
+  
+  required init?(coder aDecoder: NSCoder) {
+    let base_url = Bundle.main.infoDictionary!["API_BASE_URL"] as! String
+    self.apollo = ApolloClient(url: URL(string: base_url)!)
+    super.init(coder: aDecoder);
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -31,62 +35,40 @@ class SignInViewController: UIViewController {
   
   func checkData() -> Bool {
     if (email.text == nil || email.text == "") {
-      JSSAlertView().warning(
-        self,
-        title: "Notice!",
-        text: "Looks like your missing some vital information. \r\nPlease enter your email."
-      )
+      showWarning(message: "Looks like your missing some vital information. \r\nPlease enter your email.")
       return false
     } else if (!self.isValidEmail(testStr: email.text!)) {
-      JSSAlertView().warning(
-        self,
-        title: "Notice!",
-        text: "Please enter a valid email address.\r\n"
-      )
+      showWarning(message: "Please enter a valid email address.\r\n")
+      return false
     } else if (password.text == nil || password.text == "") {
-      JSSAlertView().warning(
-        self,
-        title: "Notice!",
-        text: "Looks like your missing some vital information. \r\nPlease enter your password."
-      )
+      showWarning(message: "Looks like your missing some vital information. \r\nPlease enter your password.")
       return false
     }
     return true
   }
   
+  func showWarning(message: String!) {
+    JSSAlertView().warning(self, title: "Notice!", text: message)
+  }
+  
   func isValidEmail(testStr:String) -> Bool {
-    // print("validate calendar: \(testStr)")
     let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-    
     let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
     return emailTest.evaluate(with: testStr)
   }
   
   func login() {
-    let encrypted_password = AESCrypt.encrypt(password.text, password: HTTPHelper.API_AUTH_PASSWORD)
+    let encrypted_password = AESCrypt.encrypt(password.text, password: Bundle.main.infoDictionary!["API_CLIENT_KEY"] as! String)
     
-    apollo.perform(mutation: UserLoginMutation(email: email.text!, password: encrypted_password!)) { (result, error) in
+    self.apollo.perform(mutation: UserLoginMutation(email: email.text!, password: encrypted_password!)) { (result, error) in
       if let error = error {
-        //Notify possible network problem.
-        JSSAlertView().warning(
-          self,
-          title: "Notice!",
-          text: "Error while attempting to login: \(error.localizedDescription)"
-        )
+        self.showWarning(message: "Error while attempting to login: \(error.localizedDescription)")
       } else if let error = result?.errors?[0] {
-        JSSAlertView().warning(
-          self,
-          title: "Notice!",
-          text: error.message
-        )
+        self.showWarning(message: error.message)
       } else if let token = result?.data?.login?.token {
         self.saveAuthToken(token: token)
       } else {
-        JSSAlertView().warning(
-          self,
-          title: "Notice!",
-          text: "Something went wrong. Please try again."
-        )
+        self.showWarning(message: "Something went wrong. Please try again.")
       }
     }
   }
@@ -115,9 +97,7 @@ class SignInViewController: UIViewController {
   }
   
   @IBAction func signInPressed(_ sender: CustomButton) {
-    if (checkData()) {
-      login()
-    }
+    if (checkData()) { login() }
   }
 }
 

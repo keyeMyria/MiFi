@@ -59,7 +59,7 @@ open class KeychainAccess {
         
         retrievedData = dataTypeRef as? Data
         let password = NSString(data: retrievedData!, encoding: String.Encoding.utf8.rawValue)
-        return (password as! String)
+        return (password! as String)
     }
     
     open class func deletePasswordForAccount(_ password: String, account: String, service: String = "keyChainDefaultService") {

@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MiFi.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,67 +77,72 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>276A24CDD1359D38F47C99297DACCC39</key>
+		<key>18C0ECD5F9251B9C8139675889535377</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3B0EE9BB07E1A3A29AA860068688AFDB</key>
+		<key>1A645BDD65E2E250DDC6400F23783900</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<key>3FFF20FC1119CCFEA4B268F900044149</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D810277CF931AEA85A9C0CD7C9AD9DE</key>
+		<key>4913FFE046D574251A6AE54142A58DA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9243B4E22CE57D0DB1884081E53A8B13</key>
+		<key>52F923E30CBC144DC0066B10BF991A22</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9ACF4FB2C602BDA765F1AFAD4535E4D2</key>
+		<key>58C28D23E70191AB6599816C38EBFCB3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6E9CEC9E5ACFE69D21456CCB70BEEA0</key>
+		<key>66B239826EF1D39D2D6C594AC2DBFF77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B0A73AAB1E63A158CA11BC08BE8DA905</key>
+		<key>AFEE705164DAB17E0F4D670CC6DD6889</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BCFA80DBF64DDF6AD6B0926BB8BCAFC4</key>
+		<key>D2BB6B84BA7576195BC3964484476114</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C63CB4AE559E609E163642ED2A914D4D</key>
+		<key>D4AA1386A3CA3854E0A8AC807F66B21E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBC9E112F14B08BD6890B01E2261E90B</key>
+		<key>DC78FF841ECEBCEFEE1888A3D84F773C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D368184BEED712B6A15E4767FE420BE5</key>
+		<key>DF1282BA9E1893B6042589ECB2DC545F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D780F80A5793F3EFDAC1606AAA75B388</key>
+		<key>EF3232767F05DE4F2C6DF42331922F5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F9639120085242E5E324517FA85F2FDD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

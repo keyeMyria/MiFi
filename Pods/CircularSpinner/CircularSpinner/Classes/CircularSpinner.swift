@@ -47,10 +47,10 @@ open class CircularSpinner: UIView {
     var indeterminateDuration: Double = 1.5
     
     fileprivate var startAngle: CGFloat {
-        return CGFloat(M_PI_2)
+        return CGFloat(Double.pi/2)
     }
     fileprivate var endAngle: CGFloat {
-        return 5 * CGFloat(M_PI_2)
+        return 5 * CGFloat(Double.pi/2)
     }
     fileprivate var arcCenter: CGPoint {
         return convert(circleView.center, to: circleView)
@@ -257,7 +257,7 @@ open class CircularSpinner: UIView {
     fileprivate func generateRotationAnimation() -> CABasicAnimation {
         let animation = CABasicAnimation(keyPath: "transform.rotation")
         animation.fromValue = 0
-        animation.toValue = 2 * M_PI
+        animation.toValue = 2 * Double.pi
         animation.duration = indeterminateDuration
         animation.repeatCount = Float.infinity
         return animation

@@ -656,7 +656,7 @@
                            "name": "Network",
                            "kind": "OBJECT"
                            },
-                           "name": "create",
+                           "name": "createNetwork",
                            "isDeprecated": false,
                            "description": null,
                            "deprecationReason": null,
@@ -672,6 +672,20 @@
                                     "kind": "NON_NULL"
                                     },
                                     "name": "bssid",
+                                    "description": null,
+                                    "defaultValue": null
+                                    },
+                                    {
+                                    "type": {
+                                    "ofType": {
+                                    "ofType": null,
+                                    "name": "String",
+                                    "kind": "SCALAR"
+                                    },
+                                    "name": null,
+                                    "kind": "NON_NULL"
+                                    },
+                                    "name": "city",
                                     "description": null,
                                     "defaultValue": null
                                     },
@@ -857,30 +871,6 @@
                            {
                            "type": {
                            "ofType": null,
-                           "name": "String",
-                           "kind": "SCALAR"
-                           },
-                           "name": "bssid",
-                           "isDeprecated": false,
-                           "description": null,
-                           "deprecationReason": null,
-                           "args": []
-                           },
-                           {
-                           "type": {
-                           "ofType": null,
-                           "name": "String",
-                           "kind": "SCALAR"
-                           },
-                           "name": "city",
-                           "isDeprecated": false,
-                           "description": null,
-                           "deprecationReason": null,
-                           "args": []
-                           },
-                           {
-                           "type": {
-                           "ofType": null,
                            "name": "Boolean",
                            "kind": "SCALAR"
                            },
@@ -893,58 +883,10 @@
                            {
                            "type": {
                            "ofType": null,
-                           "name": "Float",
-                           "kind": "SCALAR"
-                           },
-                           "name": "distance",
-                           "isDeprecated": false,
-                           "description": null,
-                           "deprecationReason": null,
-                           "args": []
-                           },
-                           {
-                           "type": {
-                           "ofType": null,
-                           "name": "Float",
-                           "kind": "SCALAR"
-                           },
-                           "name": "latitude",
-                           "isDeprecated": false,
-                           "description": null,
-                           "deprecationReason": null,
-                           "args": []
-                           },
-                           {
-                           "type": {
-                           "ofType": null,
-                           "name": "Float",
-                           "kind": "SCALAR"
-                           },
-                           "name": "longitude",
-                           "isDeprecated": false,
-                           "description": null,
-                           "deprecationReason": null,
-                           "args": []
-                           },
-                           {
-                           "type": {
-                           "ofType": null,
                            "name": "String",
                            "kind": "SCALAR"
                            },
                            "name": "name",
-                           "isDeprecated": false,
-                           "description": null,
-                           "deprecationReason": null,
-                           "args": []
-                           },
-                           {
-                           "type": {
-                           "ofType": null,
-                           "name": "String",
-                           "kind": "SCALAR"
-                           },
-                           "name": "password",
                            "isDeprecated": false,
                            "description": null,
                            "deprecationReason": null,
@@ -967,7 +909,7 @@
                            "name": "Network",
                            "kind": "OBJECT"
                            },
-                           "name": "create",
+                           "name": "createNetwork",
                            "isDeprecated": false,
                            "description": null,
                            "deprecationReason": null,
@@ -983,6 +925,20 @@
                                     "kind": "NON_NULL"
                                     },
                                     "name": "bssid",
+                                    "description": null,
+                                    "defaultValue": null
+                                    },
+                                    {
+                                    "type": {
+                                    "ofType": {
+                                    "ofType": null,
+                                    "name": "String",
+                                    "kind": "SCALAR"
+                                    },
+                                    "name": null,
+                                    "kind": "NON_NULL"
+                                    },
+                                    "name": "city",
                                     "description": null,
                                     "defaultValue": null
                                     },

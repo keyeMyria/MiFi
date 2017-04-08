@@ -1,0 +1,6 @@
+mutation CreateNetwork($name: String!, $bssid: String!, $discoverable: Boolean!, $latitude: Float!, $longitude: Float!, $city: String!, $password: String!) {
+  createNetwork(name: $name, bssid: $bssid, discoverable: $discoverable, latitude: $latitude, longitude: $longitude, city: $city, password: $password) {
+    name,
+    discoverable
+  }
+}
