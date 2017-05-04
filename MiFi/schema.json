@@ -1188,6 +1188,18 @@
                                     "defaultValue": null
                                     }
                                     ]
+                           },
+                           {
+                           "type": {
+                           "ofType": null,
+                           "name": "Validation",
+                           "kind": "OBJECT"
+                           },
+                           "name": "validateUser",
+                           "isDeprecated": false,
+                           "description": null,
+                           "deprecationReason": null,
+                           "args": []
                            }
                            ],
                 "enumValues": null,
@@ -1503,6 +1515,52 @@
                                     "defaultValue": null
                                     }
                                     ]
+                           }
+                           ],
+                "enumValues": null,
+                "description": null
+                },
+                {
+                "possibleTypes": null,
+                "name": "UserQueries",
+                "kind": "OBJECT",
+                "interfaces": [],
+                "inputFields": null,
+                "fields": [
+                           {
+                           "type": {
+                           "ofType": null,
+                           "name": "Validation",
+                           "kind": "OBJECT"
+                           },
+                           "name": "validateUser",
+                           "isDeprecated": false,
+                           "description": null,
+                           "deprecationReason": null,
+                           "args": []
+                           }
+                           ],
+                "enumValues": null,
+                "description": null
+                },
+                {
+                "possibleTypes": null,
+                "name": "Validation",
+                "kind": "OBJECT",
+                "interfaces": [],
+                "inputFields": null,
+                "fields": [
+                           {
+                           "type": {
+                           "ofType": null,
+                           "name": "Boolean",
+                           "kind": "SCALAR"
+                           },
+                           "name": "valid",
+                           "isDeprecated": false,
+                           "description": null,
+                           "deprecationReason": null,
+                           "args": []
                            }
                            ],
                 "enumValues": null,

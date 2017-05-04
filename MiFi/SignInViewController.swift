@@ -8,39 +8,38 @@
 
 import Foundation
 import UIKit
-import TextFieldEffects
-import Alamofire
-import SwiftyJSON
 import JSSAlertView
 import Apollo
 
 class SignInViewController: UIViewController {
-  @IBOutlet weak var email: CustomTextField!
-  @IBOutlet weak var password: CustomTextField!
+  
+  @IBOutlet weak var emailView: CustomTextField!
+  @IBOutlet weak var passwordView: CustomTextField!
+  @IBOutlet weak var noAccountView: UIView!
   let defaults = UserDefaults.standard
   var apollo: ApolloClient
   
   required init?(coder aDecoder: NSCoder) {
     let base_url = Bundle.main.infoDictionary!["API_BASE_URL"] as! String
     self.apollo = ApolloClient(url: URL(string: base_url)!)
-    super.init(coder: aDecoder);
+    super.init(coder: aDecoder)
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.view.backgroundColor = Colors.colorWithHexString(Colors.darkBlue())
-    email.delegate = self
-    password.delegate = self
+    noAccountView.backgroundColor = Colors.colorWithHexString("#2d3c55")
+    emailView.textField.delegate = self
+    passwordView.textField.delegate = self
   }
   
   func checkData() -> Bool {
-    if (email.text == nil || email.text == "") {
+    if (emailView.textField.text == nil || emailView.textField.text == "") {
       showWarning(message: "Looks like your missing some vital information. \r\nPlease enter your email.")
       return false
-    } else if (!self.isValidEmail(testStr: email.text!)) {
+    } else if (!self.isValidEmail(testStr: emailView.textField.text!)) {
       showWarning(message: "Please enter a valid email address.\r\n")
       return false
-    } else if (password.text == nil || password.text == "") {
+    } else if (passwordView.textField.text == nil || passwordView.textField.text == "") {
       showWarning(message: "Looks like your missing some vital information. \r\nPlease enter your password.")
       return false
     }
@@ -58,9 +57,9 @@ class SignInViewController: UIViewController {
   }
   
   func login() {
-    let encrypted_password = AESCrypt.encrypt(password.text, password: Bundle.main.infoDictionary!["API_CLIENT_KEY"] as! String)
+    let encrypted_password = AESCrypt.encrypt(passwordView.textField.text, password: Bundle.main.infoDictionary!["API_CLIENT_KEY"] as! String)
     
-    self.apollo.perform(mutation: UserLoginMutation(email: email.text!, password: encrypted_password!)) { (result, error) in
+    self.apollo.perform(mutation: UserLoginMutation(email: emailView.textField.text!, password: encrypted_password!)) { (result, error) in
       if let error = error {
         self.showWarning(message: "Error while attempting to login: \(error.localizedDescription)")
       } else if let error = result?.errors?[0] {
@@ -75,8 +74,8 @@ class SignInViewController: UIViewController {
   
   func saveAuthToken(token: String) {
     saveToken(token: token)
-    email.text = ""
-    password.text = ""
+    emailView.textField.text = ""
+    passwordView.textField.text = ""
     let homePageViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomePageViewController") as! HomePageViewController
     self.present(homePageViewController, animated: true, completion: nil)
   }

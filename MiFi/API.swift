@@ -55,6 +55,36 @@ public final class CreateNetworkMutation: GraphQLMutation {
   }
 }
 
+public final class ValidateUserQuery: GraphQLQuery {
+  public static let operationDefinition =
+    "query ValidateUser {" +
+    "  validateUser {" +
+    "    __typename" +
+    "    valid" +
+    "  }" +
+    "}"
+  public init() {
+  }
+
+  public struct Data: GraphQLMappable {
+    public let validateUser: ValidateUser?
+
+    public init(reader: GraphQLResultReader) throws {
+      validateUser = try reader.optionalValue(for: Field(responseName: "validateUser"))
+    }
+
+    public struct ValidateUser: GraphQLMappable {
+      public let __typename: String
+      public let valid: Bool?
+
+      public init(reader: GraphQLResultReader) throws {
+        __typename = try reader.value(for: Field(responseName: "__typename"))
+        valid = try reader.optionalValue(for: Field(responseName: "valid"))
+      }
+    }
+  }
+}
+
 public final class SearchForNetworksQuery: GraphQLQuery {
   public static let operationDefinition =
     "query SearchForNetworks($city: String!, $latitude: Float!, $longitude: Float!) {" +

@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 import CoreLocation
 import JSSAlertView
-import SwiftyJSON
 import LocationManagerSwift
 import Apollo
 import NVActivityIndicatorView
@@ -69,6 +68,7 @@ class SearchingNetworksViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+  
     self.view.backgroundColor = Colors.colorWithHexString(Colors.darkBlue())
     activityIndicator.color = UIColor.white
     initializeNetworksTableView()

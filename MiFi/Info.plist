@@ -51,6 +51,9 @@
 		<string>Existence-Light.otf</string>
 		<string>Fortheenas_italic.otf</string>
 		<string>Mayeka Thin Demo.otf</string>
+		<string>Lato-Regular.ttf</string>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-Light.ttf</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Will you allow this app to know your current location?</string>

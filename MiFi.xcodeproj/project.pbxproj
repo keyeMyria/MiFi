@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		06F0A669BBA8379BFFB7AE12 /* Pods_MiFiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05673F8211E9E4609BF956D3 /* Pods_MiFiTests.framework */; };
-		3E0EA8A81E12DC5F0011C34D /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EA8A61E12DC5F0011C34D /* CustomTextFieldView.swift */; };
-		3E0EA8A91E12DC5F0011C34D /* CustomTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0EA8A71E12DC5F0011C34D /* CustomTextFieldView.xib */; };
 		3E165C3B1E87065C00088D16 /* SignUpViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 3E165C3A1E87065C00088D16 /* SignUpViewController.graphql */; };
 		3E1B87911E09CD6F00EBDDC0 /* networkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1B87901E09CD6F00EBDDC0 /* networkCell.xib */; };
 		3E1B87931E09CD9400EBDDC0 /* networkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B87921E09CD9400EBDDC0 /* networkCell.swift */; };
@@ -19,8 +17,6 @@
 		3E1B879C1E0DC17000EBDDC0 /* AddNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B879B1E0DC17000EBDDC0 /* AddNetworkViewController.swift */; };
 		3E33EA1F1DD91F42004EDA35 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA1E1DD91F42004EDA35 /* CustomButton.swift */; };
 		3E33EA211DDA4515004EDA35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA201DDA4515004EDA35 /* SignUpViewController.swift */; };
-		3E33EA231DDCE05B004EDA35 /* CustomOptionWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA221DDCE05B004EDA35 /* CustomOptionWheel.swift */; };
-		3E33EA251DDE2635004EDA35 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA241DDE2635004EDA35 /* HTTPHelper.swift */; };
 		3E33EA271DDE263D004EDA35 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA261DDE263D004EDA35 /* KeychainAccess.swift */; };
 		3E33EA2B1DE61A7E004EDA35 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA2A1DE61A7E004EDA35 /* AESCrypt.m */; };
 		3E33EA2F1DE61AEA004EDA35 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E33EA2E1DE61AEA004EDA35 /* NSData+Base64.m */; };
@@ -34,6 +30,25 @@
 		3E6CABC21E42C99F00C5519B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CABC11E42C99F00C5519B /* Network.swift */; };
 		3E6CABC41E42CAC400C5519B /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CABC31E42CAC400C5519B /* Platform.swift */; };
 		3E6CABC61E42D30900C5519B /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6CABC51E42D30900C5519B /* LocationHelper.swift */; };
+		3E9297821EB4FE670050AFA1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9297811EB4FE670050AFA1 /* CustomTextField.swift */; };
+		3E9297841EB4FE800050AFA1 /* CustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297831EB4FE800050AFA1 /* CustomTextField.xib */; };
+		3E9297951EB505FC0050AFA1 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297851EB505FC0050AFA1 /* Lato-Bold.ttf */; };
+		3E9297961EB505FC0050AFA1 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297861EB505FC0050AFA1 /* Lato-BoldItalic.ttf */; };
+		3E9297971EB505FC0050AFA1 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297871EB505FC0050AFA1 /* Lato-Hairline.ttf */; };
+		3E9297981EB505FC0050AFA1 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297881EB505FC0050AFA1 /* Lato-HairlineItalic.ttf */; };
+		3E9297991EB505FC0050AFA1 /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297891EB505FC0050AFA1 /* Lato-Heavy.ttf */; };
+		3E92979A1EB505FC0050AFA1 /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E92978A1EB505FC0050AFA1 /* Lato-HeavyItalic.ttf */; };
+		3E92979B1EB505FC0050AFA1 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E92978B1EB505FC0050AFA1 /* Lato-Italic.ttf */; };
+		3E92979C1EB505FC0050AFA1 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E92978C1EB505FC0050AFA1 /* Lato-Light.ttf */; };
+		3E92979D1EB505FC0050AFA1 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E92978D1EB505FC0050AFA1 /* Lato-LightItalic.ttf */; };
+		3E92979E1EB505FC0050AFA1 /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E92978E1EB505FC0050AFA1 /* Lato-Medium.ttf */; };
+		3E92979F1EB505FC0050AFA1 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E92978F1EB505FC0050AFA1 /* Lato-MediumItalic.ttf */; };
+		3E9297A01EB505FC0050AFA1 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297901EB505FC0050AFA1 /* Lato-Regular.ttf */; };
+		3E9297A11EB505FC0050AFA1 /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297911EB505FC0050AFA1 /* Lato-Semibold.ttf */; };
+		3E9297A21EB505FC0050AFA1 /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297921EB505FC0050AFA1 /* Lato-SemiboldItalic.ttf */; };
+		3E9297A31EB505FC0050AFA1 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297931EB505FC0050AFA1 /* Lato-Thin.ttf */; };
+		3E9297A41EB505FC0050AFA1 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E9297941EB505FC0050AFA1 /* Lato-ThinItalic.ttf */; };
+		3E9297A81EB5071A0050AFA1 /* NewCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9297A71EB5071A0050AFA1 /* NewCustomButton.swift */; };
 		3EA38F041E834F1D00D22C30 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 3EA38F031E834F1D00D22C30 /* schema.json */; };
 		3EA38F061E83519700D22C30 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA38F051E83519700D22C30 /* API.swift */; };
 		3EB3D5771E8C99330051180D /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3D5761E8C99330051180D /* Keys.plist */; };
@@ -48,7 +63,7 @@
 		3EB3DBD91DD7A46A00CD1D80 /* MiFiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBD81DD7A46A00CD1D80 /* MiFiUITests.swift */; };
 		3EB3DBE71DD7ABEE00CD1D80 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBE61DD7ABEE00CD1D80 /* SignInViewController.swift */; };
 		3EB3DBE91DD7AC4900CD1D80 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBE81DD7AC4900CD1D80 /* Colors.swift */; };
-		3EB3DBEB1DD7ADE700CD1D80 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3DBEA1DD7ADE700CD1D80 /* CustomTextField.swift */; };
+		3EC681921E9A9CC400AE4998 /* HomePageViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 3EC681911E9A9CC400AE4998 /* HomePageViewController.graphql */; };
 		3ED135571E835A2500BDD3B2 /* SignInViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 3ED135561E835A2500BDD3B2 /* SignInViewController.graphql */; };
 		6C6E4AEA368DF346F651F381 /* Pods_MiFiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CDEFEF0212987839228037 /* Pods_MiFiUITests.framework */; };
 		6E7797FFC80BC5582125A111 /* Pods_MiFi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9509B106CC2ECF4BFD9A02E5 /* Pods_MiFi.framework */; };
@@ -76,8 +91,6 @@
 		05673F8211E9E4609BF956D3 /* Pods_MiFiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiFiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8E3935BAE3E7873EA3E290 /* Pods-MiFiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiTests/Pods-MiFiTests.release.xcconfig"; sourceTree = "<group>"; };
 		38C448DF87D49C5288CF84E9 /* Pods-MiFi.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFi.dev.xcconfig"; path = "Pods/Target Support Files/Pods-MiFi/Pods-MiFi.dev.xcconfig"; sourceTree = "<group>"; };
-		3E0EA8A61E12DC5F0011C34D /* CustomTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
-		3E0EA8A71E12DC5F0011C34D /* CustomTextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextFieldView.xib; sourceTree = "<group>"; };
 		3E165C3A1E87065C00088D16 /* SignUpViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SignUpViewController.graphql; sourceTree = "<group>"; };
 		3E1B87901E09CD6F00EBDDC0 /* networkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = networkCell.xib; sourceTree = "<group>"; };
 		3E1B87921E09CD9400EBDDC0 /* networkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = networkCell.swift; sourceTree = "<group>"; };
@@ -87,8 +100,6 @@
 		3E1B879B1E0DC17000EBDDC0 /* AddNetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNetworkViewController.swift; sourceTree = "<group>"; };
 		3E33EA1E1DD91F42004EDA35 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		3E33EA201DDA4515004EDA35 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		3E33EA221DDCE05B004EDA35 /* CustomOptionWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOptionWheel.swift; sourceTree = "<group>"; };
-		3E33EA241DDE2635004EDA35 /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
 		3E33EA261DDE263D004EDA35 /* KeychainAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
 		3E33EA281DE61A7D004EDA35 /* MiFi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiFi-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E33EA291DE61A7E004EDA35 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
@@ -108,6 +119,25 @@
 		3E6CABC11E42C99F00C5519B /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		3E6CABC31E42CAC400C5519B /* Platform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		3E6CABC51E42D30900C5519B /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		3E9297811EB4FE670050AFA1 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3E9297831EB4FE800050AFA1 /* CustomTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextField.xib; sourceTree = "<group>"; };
+		3E9297851EB505FC0050AFA1 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		3E9297861EB505FC0050AFA1 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3E9297871EB505FC0050AFA1 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		3E9297881EB505FC0050AFA1 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		3E9297891EB505FC0050AFA1 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		3E92978A1EB505FC0050AFA1 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		3E92978B1EB505FC0050AFA1 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		3E92978C1EB505FC0050AFA1 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		3E92978D1EB505FC0050AFA1 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		3E92978E1EB505FC0050AFA1 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		3E92978F1EB505FC0050AFA1 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3E9297901EB505FC0050AFA1 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		3E9297911EB505FC0050AFA1 /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		3E9297921EB505FC0050AFA1 /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		3E9297931EB505FC0050AFA1 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		3E9297941EB505FC0050AFA1 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3E9297A71EB5071A0050AFA1 /* NewCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCustomButton.swift; sourceTree = "<group>"; };
 		3EA38F031E834F1D00D22C30 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		3EA38F051E83519700D22C30 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3EB3D5761E8C99330051180D /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
@@ -128,7 +158,7 @@
 		3EB3DBDA1DD7A46A00CD1D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EB3DBE61DD7ABEE00CD1D80 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3EB3DBE81DD7AC4900CD1D80 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		3EB3DBEA1DD7ADE700CD1D80 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3EC681911E9A9CC400AE4998 /* HomePageViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HomePageViewController.graphql; sourceTree = "<group>"; };
 		3ED135561E835A2500BDD3B2 /* SignInViewController.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SignInViewController.graphql; sourceTree = "<group>"; };
 		542FD01ECAE60FE4DBF88605 /* Pods-MiFiUITests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiUITests.dev.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests.dev.xcconfig"; sourceTree = "<group>"; };
 		56D335C621885F97A2CD0B1F /* Pods-MiFiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiFiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiFiUITests/Pods-MiFiUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +201,22 @@
 		3E1B87941E09DB7600EBDDC0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				3E9297851EB505FC0050AFA1 /* Lato-Bold.ttf */,
+				3E9297861EB505FC0050AFA1 /* Lato-BoldItalic.ttf */,
+				3E9297871EB505FC0050AFA1 /* Lato-Hairline.ttf */,
+				3E9297881EB505FC0050AFA1 /* Lato-HairlineItalic.ttf */,
+				3E9297891EB505FC0050AFA1 /* Lato-Heavy.ttf */,
+				3E92978A1EB505FC0050AFA1 /* Lato-HeavyItalic.ttf */,
+				3E92978B1EB505FC0050AFA1 /* Lato-Italic.ttf */,
+				3E92978C1EB505FC0050AFA1 /* Lato-Light.ttf */,
+				3E92978D1EB505FC0050AFA1 /* Lato-LightItalic.ttf */,
+				3E92978E1EB505FC0050AFA1 /* Lato-Medium.ttf */,
+				3E92978F1EB505FC0050AFA1 /* Lato-MediumItalic.ttf */,
+				3E9297901EB505FC0050AFA1 /* Lato-Regular.ttf */,
+				3E9297911EB505FC0050AFA1 /* Lato-Semibold.ttf */,
+				3E9297921EB505FC0050AFA1 /* Lato-SemiboldItalic.ttf */,
+				3E9297931EB505FC0050AFA1 /* Lato-Thin.ttf */,
+				3E9297941EB505FC0050AFA1 /* Lato-ThinItalic.ttf */,
 				3E1B87961E09DF3800EBDDC0 /* Fortheenas_italic.otf */,
 				3E1B87951E09DB9100EBDDC0 /* Existence-Light.otf */,
 				3E1B87991E09E22F00EBDDC0 /* Mayeka Thin Demo.otf */,
@@ -226,7 +272,6 @@
 				3E33EA361DE74E59004EDA35 /* MiFi.entitlements */,
 				3EB3DBB51DD7A46A00CD1D80 /* AppDelegate.swift */,
 				3E33EA261DDE263D004EDA35 /* KeychainAccess.swift */,
-				3E33EA241DDE2635004EDA35 /* HTTPHelper.swift */,
 				3E6CABC31E42CAC400C5519B /* Platform.swift */,
 				3E6CABC11E42C99F00C5519B /* Network.swift */,
 				3E6CABC51E42D30900C5519B /* LocationHelper.swift */,
@@ -236,6 +281,7 @@
 				3E33EA201DDA4515004EDA35 /* SignUpViewController.swift */,
 				3E165C3A1E87065C00088D16 /* SignUpViewController.graphql */,
 				3E33EA3D1DE7C61E004EDA35 /* HomePageViewController.swift */,
+				3EC681911E9A9CC400AE4998 /* HomePageViewController.graphql */,
 				3E33EA391DE792BA004EDA35 /* SearchingNetworksViewController.swift */,
 				3EB3D5781E8CA6800051180D /* SearchingNetworksViewController.graphql */,
 				3E1B879B1E0DC17000EBDDC0 /* AddNetworkViewController.swift */,
@@ -247,13 +293,12 @@
 				3EB3DBC11DD7A46A00CD1D80 /* LaunchScreen.storyboard */,
 				3EB3DBBC1DD7A46A00CD1D80 /* MiFi.xcdatamodeld */,
 				3EB3DBE81DD7AC4900CD1D80 /* Colors.swift */,
-				3EB3DBEA1DD7ADE700CD1D80 /* CustomTextField.swift */,
+				3E9297831EB4FE800050AFA1 /* CustomTextField.xib */,
+				3E9297811EB4FE670050AFA1 /* CustomTextField.swift */,
+				3E9297A71EB5071A0050AFA1 /* NewCustomButton.swift */,
 				3E33EA1E1DD91F42004EDA35 /* CustomButton.swift */,
-				3E33EA221DDCE05B004EDA35 /* CustomOptionWheel.swift */,
 				3E1B87901E09CD6F00EBDDC0 /* networkCell.xib */,
 				3E1B87921E09CD9400EBDDC0 /* networkCell.swift */,
-				3E0EA8A61E12DC5F0011C34D /* CustomTextFieldView.swift */,
-				3E0EA8A71E12DC5F0011C34D /* CustomTextFieldView.xib */,
 				3E1B87941E09DB7600EBDDC0 /* Fonts */,
 				3E33EA2C1DE61A9A004EDA35 /* Supporting Files */,
 			);
@@ -430,20 +475,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9297991EB505FC0050AFA1 /* Lato-Heavy.ttf in Resources */,
 				3E1B87971E09E13F00EBDDC0 /* Fortheenas_italic.otf in Resources */,
+				3EC681921E9A9CC400AE4998 /* HomePageViewController.graphql in Resources */,
 				3EA38F041E834F1D00D22C30 /* schema.json in Resources */,
+				3E9297A01EB505FC0050AFA1 /* Lato-Regular.ttf in Resources */,
+				3E92979B1EB505FC0050AFA1 /* Lato-Italic.ttf in Resources */,
+				3E92979E1EB505FC0050AFA1 /* Lato-Medium.ttf in Resources */,
+				3E9297A31EB505FC0050AFA1 /* Lato-Thin.ttf in Resources */,
 				3E1B87981E09E13F00EBDDC0 /* Existence-Light.otf in Resources */,
 				3EB3DBC31DD7A46A00CD1D80 /* LaunchScreen.storyboard in Resources */,
+				3E92979C1EB505FC0050AFA1 /* Lato-Light.ttf in Resources */,
+				3E9297841EB4FE800050AFA1 /* CustomTextField.xib in Resources */,
+				3E9297961EB505FC0050AFA1 /* Lato-BoldItalic.ttf in Resources */,
 				3EB3DBC01DD7A46A00CD1D80 /* Assets.xcassets in Resources */,
+				3E9297951EB505FC0050AFA1 /* Lato-Bold.ttf in Resources */,
+				3E92979F1EB505FC0050AFA1 /* Lato-MediumItalic.ttf in Resources */,
 				3E1B879A1E09E22F00EBDDC0 /* Mayeka Thin Demo.otf in Resources */,
+				3E9297981EB505FC0050AFA1 /* Lato-HairlineItalic.ttf in Resources */,
+				3E9297A41EB505FC0050AFA1 /* Lato-ThinItalic.ttf in Resources */,
 				3E4B55791E949023006A7827 /* AddNetworkViewController.graphql in Resources */,
 				3EB3D5791E8CA6800051180D /* SearchingNetworksViewController.graphql in Resources */,
+				3E9297A21EB505FC0050AFA1 /* Lato-SemiboldItalic.ttf in Resources */,
 				3E1B87911E09CD6F00EBDDC0 /* networkCell.xib in Resources */,
 				3EB3DBBB1DD7A46A00CD1D80 /* Main.storyboard in Resources */,
+				3E9297A11EB505FC0050AFA1 /* Lato-Semibold.ttf in Resources */,
+				3E9297971EB505FC0050AFA1 /* Lato-Hairline.ttf in Resources */,
+				3E92979D1EB505FC0050AFA1 /* Lato-LightItalic.ttf in Resources */,
 				3EB3D5771E8C99330051180D /* Keys.plist in Resources */,
 				3ED135571E835A2500BDD3B2 /* SignInViewController.graphql in Resources */,
+				3E92979A1EB505FC0050AFA1 /* Lato-HeavyItalic.ttf in Resources */,
 				3E165C3B1E87065C00088D16 /* SignUpViewController.graphql in Resources */,
-				3E0EA8A91E12DC5F0011C34D /* CustomTextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +682,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9297821EB4FE670050AFA1 /* CustomTextField.swift in Sources */,
 				3E33EA3A1DE792BA004EDA35 /* SearchingNetworksViewController.swift in Sources */,
 				3EB3DBE71DD7ABEE00CD1D80 /* SignInViewController.swift in Sources */,
 				3EB3DBE91DD7AC4900CD1D80 /* Colors.swift in Sources */,
@@ -627,19 +690,16 @@
 				3E33EA351DE61B3C004EDA35 /* NSData+CommonCrypto.m in Sources */,
 				3E33EA211DDA4515004EDA35 /* SignUpViewController.swift in Sources */,
 				3E6CABC41E42CAC400C5519B /* Platform.swift in Sources */,
-				3EB3DBEB1DD7ADE700CD1D80 /* CustomTextField.swift in Sources */,
 				3EA38F061E83519700D22C30 /* API.swift in Sources */,
 				3E33EA2B1DE61A7E004EDA35 /* AESCrypt.m in Sources */,
 				3EB3DBB81DD7A46A00CD1D80 /* ViewController.swift in Sources */,
 				3E33EA3C1DE79341004EDA35 /* MyAccountViewController.swift in Sources */,
-				3E0EA8A81E12DC5F0011C34D /* CustomTextFieldView.swift in Sources */,
 				3E33EA321DE61B1D004EDA35 /* NSString+Base64.m in Sources */,
 				3E33EA271DDE263D004EDA35 /* KeychainAccess.swift in Sources */,
 				3E6CABC61E42D30900C5519B /* LocationHelper.swift in Sources */,
+				3E9297A81EB5071A0050AFA1 /* NewCustomButton.swift in Sources */,
 				3E33EA1F1DD91F42004EDA35 /* CustomButton.swift in Sources */,
 				3EB3DBBE1DD7A46A00CD1D80 /* MiFi.xcdatamodeld in Sources */,
-				3E33EA251DDE2635004EDA35 /* HTTPHelper.swift in Sources */,
-				3E33EA231DDCE05B004EDA35 /* CustomOptionWheel.swift in Sources */,
 				3E1B87931E09CD9400EBDDC0 /* networkCell.swift in Sources */,
 				3E33EA2F1DE61AEA004EDA35 /* NSData+Base64.m in Sources */,
 				3EB3DBB61DD7A46A00CD1D80 /* AppDelegate.swift in Sources */,

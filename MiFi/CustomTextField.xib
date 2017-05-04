@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="MiFi" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="5Zu-j5-6EX" id="MVi-Zy-LeQ"/>
+                <outlet property="textFieldIcon" destination="fSC-oZ-xMB" id="d4z-ub-y0c"/>
+                <outlet property="textFieldView" destination="iN0-l3-epB" id="CNk-mj-SXf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zu-j5-6EX">
+                    <rect key="frame" x="20" y="4.5" width="302" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSC-oZ-xMB">
+                    <rect key="frame" x="330" y="2.5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="25" id="2z4-s1-gKq"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="25" id="x1e-5G-X2A"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5Zu-j5-6EX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="91Y-hI-yaj"/>
+                <constraint firstItem="fSC-oZ-xMB" firstAttribute="leading" secondItem="5Zu-j5-6EX" secondAttribute="trailing" constant="8" symbolic="YES" id="VI5-Hk-WOg"/>
+                <constraint firstItem="fSC-oZ-xMB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="keh-0g-KHO"/>
+                <constraint firstAttribute="trailing" secondItem="fSC-oZ-xMB" secondAttribute="trailing" constant="20" id="tqK-SJ-WyG"/>
+                <constraint firstItem="5Zu-j5-6EX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yBf-gF-ioY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.5" y="76"/>
+        </view>
+    </objects>
+</document>

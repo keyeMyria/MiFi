@@ -8,17 +8,15 @@
 
 import Foundation
 import UIKit
-import Alamofire
-import SwiftyJSON
 import JSSAlertView
 import Apollo
 import LocationManagerSwift
 import CoreLocation
 
 class AddNetworkViewController: UIViewController {
-  @IBOutlet weak var networkName: CustomTextFieldView!
-  @IBOutlet weak var password: CustomTextFieldView!
-  @IBOutlet weak var verifyPassword: CustomTextFieldView!
+  @IBOutlet weak var networkName: UITextField!
+  @IBOutlet weak var password: UITextField!
+  @IBOutlet weak var verifyPassword: UITextField!
   @IBOutlet weak var discoverable: UISwitch!
   @IBOutlet weak var addNetworkView: UIView!
   @IBOutlet weak var noNetworkView: UIView!
@@ -63,12 +61,12 @@ class AddNetworkViewController: UIViewController {
   }
   
   func checkData() -> Bool {
-    if ((networkName.textField.text == nil || networkName.textField.text == "") ||
-        (password.textField.text == nil || password.textField.text == "") ||
-        (verifyPassword.textField.text == nil || verifyPassword.textField.text == "")) {
+    if ((networkName.text == nil || networkName.text == "") ||
+        (password.text == nil || password.text == "") ||
+        (verifyPassword.text == nil || verifyPassword.text == "")) {
       self.showWarning(message: "Looks like your missing some vital information. \r\nPlease fill out all fields to add network.")
       return false
-    } else if (password.textField.text != verifyPassword.textField.text) {
+    } else if (password.text != verifyPassword.text) {
       self.showWarning(message: "Passwords don't seem to match. Please type carefully!")
       return false
     }
@@ -107,10 +105,10 @@ class AddNetworkViewController: UIViewController {
         return
       }
       
-      let encrypted_password = AESCrypt.encrypt(self.password.textField.text!, password: Bundle.main.infoDictionary!["API_CLIENT_KEY"] as! String)
+      let encrypted_password = AESCrypt.encrypt(self.password.text!, password: Bundle.main.infoDictionary!["API_CLIENT_KEY"] as! String)
       let encrypted_bssid = AESCrypt.encrypt(self.bssid!, password: Bundle.main.infoDictionary!["API_CLIENT_KEY"] as! String)
       
-      self.apollo.perform(mutation: CreateNetworkMutation(name: self.networkName.textField.text!, bssid: encrypted_bssid!, discoverable: (self.discoverable != nil), latitude: latitude, longitude: longitude, city: city!, password: encrypted_password!)) { (result, error) in
+      self.apollo.perform(mutation: CreateNetworkMutation(name: self.networkName.text!, bssid: encrypted_bssid!, discoverable: (self.discoverable != nil), latitude: latitude, longitude: longitude, city: city!, password: encrypted_password!)) { (result, error) in
         print("Result: \(String(describing: result))")
         print("Error: \(String(describing: error))")
       }
@@ -122,7 +120,7 @@ class AddNetworkViewController: UIViewController {
     case .addNetwork :
       noNetworkView.isHidden = true
       addNetworkView.isHidden = false
-      self.networkName.textField.text = ssid!
+      self.networkName.text = ssid!
       break
     default :
       noNetworkView.isHidden = false

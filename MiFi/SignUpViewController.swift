@@ -8,18 +8,15 @@
 
 import Foundation
 import UIKit
-import TextFieldEffects
-import Alamofire
-import SwiftyJSON
 import JSSAlertView
 import Apollo
 
 class SignUpViewController: UIViewController {
   
-  @IBOutlet weak var name: CustomTextField!
-  @IBOutlet weak var email: CustomTextField!
-  @IBOutlet weak var password: CustomTextField!
-  @IBOutlet weak var verifyPassword: CustomTextField!
+  @IBOutlet weak var name: UITextField!
+  @IBOutlet weak var email: UITextField!
+  @IBOutlet weak var password: UITextField!
+  @IBOutlet weak var verifyPassword: UITextField!
   @IBOutlet weak var backButtonView: UIView!
   @IBOutlet weak var actionView: UIView!
   @IBOutlet weak var signUpScrollView: UIScrollView!

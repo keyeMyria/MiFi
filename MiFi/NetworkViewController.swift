@@ -13,9 +13,9 @@ import JSSAlertView
 
 class NetworkViewController: UIViewController {
     
-    @IBOutlet weak var networkName: CustomTextFieldView!
-    @IBOutlet weak var password: CustomTextFieldView!
-    @IBOutlet weak var verifyPassword: CustomTextFieldView!
+    @IBOutlet weak var networkName: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var verifyPassword: UITextField!
     
     @IBOutlet weak var discoverable: UISwitch!
     
@@ -25,7 +25,6 @@ class NetworkViewController: UIViewController {
     var latitude: Double? = nil
     var longitude: Double? = nil
     let locationManager = CLLocationManager()
-    let httpHelper = HTTPHelper()
 
     override func viewDidLoad() {
         super.viewDidLoad()
